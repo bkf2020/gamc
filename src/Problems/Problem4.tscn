@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://ProblemScene.gd" type="Script" id=1]
+[ext_resource path="res://Problems/Problem4Script.gd" type="Script" id=1]
 
 [node name="Node2D" type="Node2D"]
 
@@ -24,7 +24,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ProblemLink2" type="LinkButton" parent="Panel"]
+[node name="ProblemLink4" type="LinkButton" parent="Panel"]
 margin_left = 72.0
 margin_top = 40.0
 margin_right = 156.0
@@ -39,7 +39,7 @@ margin_left = 32.0
 margin_top = 8.0
 margin_right = 216.0
 margin_bottom = 24.0
-text = "Problem 2: 2021 AIME II # 6"
+text = "Problem 1: 2021 AIME II # 7"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -54,5 +54,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Panel/ProblemLink2" to="Panel" method="_on_ProblemLink2_pressed"]
+[connection signal="pressed" from="Panel/ProblemLink4" to="Panel" method="_on_ProblemLink4_pressed"]
 [connection signal="pressed" from="Panel/BackTraining" to="Panel" method="_on_BackTraining_pressed"]

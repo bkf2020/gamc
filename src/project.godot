@@ -11,8 +11,18 @@ config_version=4
 [application]
 
 config/name="gamc"
-run/main_scene="res://Training.tscn"
+run/main_scene="res://SelectDifficulty.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+PlayerVariables="*res://PlayerVariables.gd"
+
+[global]
+
+main=false
+scene=false
+default=false
 
 [physics]
 

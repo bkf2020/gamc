@@ -100,4 +100,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ConfirmTraining" type="ConfirmationDialog" parent="Panel"]
+margin_left = 96.0
+margin_top = 192.0
+margin_right = 296.0
+margin_bottom = 262.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="item_selected" from="Panel/TestSelection" to="Panel" method="_on_TestSelection_item_selected"]
+[connection signal="pressed" from="Panel/GetTraining" to="Panel" method="_on_GetTraining_pressed"]
+[connection signal="confirmed" from="Panel/ConfirmTraining" to="Panel" method="_on_ConfirmTraining_confirmed"]
