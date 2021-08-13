@@ -53,8 +53,11 @@ until you get points to battle.
 - [ ] finish building an interface to allow players to train
 	- [x] add initial interface
 	- [ ] add custom textures to the interface
-	- [ ] add a scene that allows players to choose the difficulty of their training
-	- [ ] randomly generate the problems given the choice from the player
-	- [ ] update elements in a scene based on the random data
-		- [ ] update the problem link and the label
+	- [x] add a scene that allows players to choose the difficulty of their training
+	- [x] randomly generate the problems given the choice from the player
+	- [x] update elements in a scene based on the random data
+		- [x] update the problem link and the label
 	- [ ] check answer after user submits one
+	- [ ] add countdown timer
+	- [ ] make sure two problems aren't repeated (may happen)
+	- [ ] simplify the code! (maybe if there is time...)
