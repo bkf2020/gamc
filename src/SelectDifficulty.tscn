@@ -1,0 +1,103 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://GetTraining.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 320.0
+margin_top = 80.0
+margin_right = 704.0
+margin_bottom = 528.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DifficultyLabel" type="Label" parent="Panel"]
+anchor_right = 0.083
+anchor_bottom = 0.031
+margin_left = 136.0
+margin_top = 208.0
+margin_right = 227.128
+margin_bottom = 208.112
+text = "Select the difficulty"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestLabel" type="Label" parent="Panel"]
+anchor_right = 0.083
+anchor_bottom = 0.031
+margin_left = 136.0
+margin_top = 128.0
+margin_right = 227.128
+margin_bottom = 128.112
+text = "Select the test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestSelection" type="OptionButton" parent="Panel"]
+margin_left = 136.0
+margin_top = 144.0
+margin_right = 248.0
+margin_bottom = 168.0
+text = "AIME"
+items = [ "AIME", null, false, 0, null, "AMC8", null, false, 1, null, "AMC10", null, false, 2, null, "AMC12", null, false, 3, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DifficultySelection" type="OptionButton" parent="Panel"]
+margin_left = 136.0
+margin_top = 224.0
+margin_right = 263.0
+margin_bottom = 248.0
+text = "Easy"
+items = [ "Easy", null, false, 0, null, "Medium", null, false, 1, null, "Hard", null, false, 2, null, "Very Hard", null, false, 3, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TrainingLabel" type="Label" parent="Panel"]
+margin_left = 120.0
+margin_top = 40.0
+margin_right = 263.0
+margin_bottom = 88.0
+text = "Select your training:
+Pick a test first,
+then pick the difficulty"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DDLabel" type="Label" parent="Panel"]
+margin_left = 72.0
+margin_top = 296.0
+margin_right = 355.0
+margin_bottom = 395.0
+text = "For the AIME Test, the difficulties represent:
+
+Easy = Problems 1 to 5
+Medium = Problems 6 to 10
+Hard = Problems 11 to 13
+Very Hard = Problems 14 to 15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GetTraining" type="Button" parent="Panel"]
+margin_left = 144.0
+margin_top = 264.0
+margin_right = 235.0
+margin_bottom = 284.0
+text = "Get training!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="item_selected" from="Panel/TestSelection" to="Panel" method="_on_TestSelection_item_selected"]
