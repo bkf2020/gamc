@@ -1,0 +1,298 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://SetProblemScene.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TrainingPanel" type="Panel" parent="."]
+margin_left = 256.0
+margin_top = 32.0
+margin_right = 728.0
+margin_bottom = 744.0
+rect_pivot_offset = Vector2( 264, 432 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Training" type="Label" parent="TrainingPanel"]
+margin_left = -24.0
+margin_top = 8.0
+margin_right = 502.0
+margin_bottom = 107.0
+text = "Training
+Each problem is originally worth 7 points.
+If you get it wrong, the value of the problem
+decreases by 2 points.
+Each problem will be worth at least 1 point,
+unless you don't submit that problem."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem1Text" type="Label" parent="TrainingPanel"]
+margin_left = 136.0
+margin_top = 144.0
+margin_right = 202.0
+margin_bottom = 158.0
+rect_pivot_offset = Vector2( -672, 40 )
+text = "Problem 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem1Description" type="Label" parent="TrainingPanel"]
+margin_left = 224.0
+margin_top = 144.0
+margin_right = 322.0
+margin_bottom = 158.0
+rect_pivot_offset = Vector2( -760, 40 )
+text = "2016 AMC 8 #1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem1Status" type="Label" parent="TrainingPanel"]
+margin_left = 160.0
+margin_top = 168.0
+margin_right = 278.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( -696, 16 )
+text = "Unattempted (0/7)"
+
+[node name="Problem1Submit" type="Button" parent="TrainingPanel"]
+margin_left = 224.0
+margin_top = 200.0
+margin_right = 304.0
+margin_bottom = 220.0
+rect_pivot_offset = Vector2( -760, -16 )
+text = "Submit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem1Answer" type="OptionButton" parent="TrainingPanel"]
+margin_left = 136.0
+margin_top = 200.0
+margin_right = 192.0
+margin_bottom = 220.0
+rect_pivot_offset = Vector2( -672, -16 )
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem2Text" type="Label" parent="TrainingPanel"]
+margin_left = 136.0
+margin_top = 264.0
+margin_right = 202.0
+margin_bottom = 278.0
+text = "Problem 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem2Description" type="Label" parent="TrainingPanel"]
+margin_left = 240.0
+margin_top = 264.0
+margin_right = 338.0
+margin_bottom = 278.0
+text = "2016 AMC 8 #1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem2Status" type="Label" parent="TrainingPanel"]
+margin_left = 176.0
+margin_top = 288.0
+margin_right = 294.0
+margin_bottom = 304.0
+text = "Unattempted (0/7)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem2Submit" type="Button" parent="TrainingPanel"]
+margin_left = 240.0
+margin_top = 312.0
+margin_right = 320.0
+margin_bottom = 332.0
+text = "Submit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem2Answer" type="OptionButton" parent="TrainingPanel"]
+margin_left = 152.0
+margin_top = 312.0
+margin_right = 208.0
+margin_bottom = 332.0
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem3Text" type="Label" parent="TrainingPanel"]
+margin_left = 136.0
+margin_top = 376.0
+margin_right = 202.0
+margin_bottom = 390.0
+text = "Problem 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem3Description" type="Label" parent="TrainingPanel"]
+margin_left = 240.0
+margin_top = 376.0
+margin_right = 338.0
+margin_bottom = 390.0
+text = "2016 AMC 8 #1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem3Status" type="Label" parent="TrainingPanel"]
+margin_left = 176.0
+margin_top = 400.0
+margin_right = 294.0
+margin_bottom = 416.0
+text = "Unattempted (0/7)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem3Submit" type="Button" parent="TrainingPanel"]
+margin_left = 240.0
+margin_top = 424.0
+margin_right = 320.0
+margin_bottom = 444.0
+text = "Submit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem3Answer" type="OptionButton" parent="TrainingPanel"]
+margin_left = 152.0
+margin_top = 424.0
+margin_right = 208.0
+margin_bottom = 444.0
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem4Text" type="Label" parent="TrainingPanel"]
+margin_left = 144.0
+margin_top = 480.0
+margin_right = 210.0
+margin_bottom = 494.0
+rect_pivot_offset = Vector2( 104, 48 )
+text = "Problem 4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem4Description" type="Label" parent="TrainingPanel"]
+margin_left = 232.0
+margin_top = 480.0
+margin_right = 330.0
+margin_bottom = 494.0
+rect_pivot_offset = Vector2( 16, 48 )
+text = "2016 AMC 8 #1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem4Status" type="Label" parent="TrainingPanel"]
+margin_left = 168.0
+margin_top = 504.0
+margin_right = 286.0
+margin_bottom = 520.0
+rect_pivot_offset = Vector2( 80, 24 )
+text = "Unattempted (0/7)"
+
+[node name="Problem4Submit" type="Button" parent="TrainingPanel"]
+margin_left = 232.0
+margin_top = 536.0
+margin_right = 312.0
+margin_bottom = 556.0
+rect_pivot_offset = Vector2( 16, -8 )
+text = "Submit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem4Answer" type="OptionButton" parent="TrainingPanel"]
+margin_left = 144.0
+margin_top = 536.0
+margin_right = 200.0
+margin_bottom = 556.0
+rect_pivot_offset = Vector2( 104, -8 )
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem5Text" type="Label" parent="TrainingPanel"]
+margin_left = 144.0
+margin_top = 584.0
+margin_right = 210.0
+margin_bottom = 598.0
+rect_pivot_offset = Vector2( 104, 48 )
+text = "Problem 5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem5Description" type="Label" parent="TrainingPanel"]
+margin_left = 232.0
+margin_top = 584.0
+margin_right = 330.0
+margin_bottom = 598.0
+rect_pivot_offset = Vector2( 16, 48 )
+text = "2016 AMC 8 #1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem5Status" type="Label" parent="TrainingPanel"]
+margin_left = 168.0
+margin_top = 608.0
+margin_right = 286.0
+margin_bottom = 624.0
+rect_pivot_offset = Vector2( 80, 24 )
+text = "Unattempted (0/7)"
+
+[node name="Problem5Submit" type="Button" parent="TrainingPanel"]
+margin_left = 232.0
+margin_top = 640.0
+margin_right = 312.0
+margin_bottom = 660.0
+rect_pivot_offset = Vector2( 16, -8 )
+text = "Submit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem5Answer" type="OptionButton" parent="TrainingPanel"]
+margin_left = 144.0
+margin_top = 640.0
+margin_right = 200.0
+margin_bottom = 660.0
+rect_pivot_offset = Vector2( 104, -8 )
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
