@@ -77,13 +77,13 @@ func _on_ConfirmTraining_confirmed():
 				problem = rng.randi_range(11, 13)
 			if(PlayerVariables.difficulty == "Very Hard"):
 				problem = rng.randi_range(14, 15)
-			
+
 			var test_types = ["I", "II"]
 			var test_type = test_types[rng.randi_range(0, 1)]
-			
-			var problem_name = str(year) + " AIME " + test_type + " Problem " + str(problem)
+
+			var problem_name = str(year) + " AIME " + test_type + " #" + str(problem)
 			PlayerVariables.problem_names[i] = problem_name
-			
+
 			var problem_link = "https://artofproblemsolving.com/wiki/index.php/"
 			problem_link += str(year) + "_AIME_"
 			problem_link += test_type + "_Problems#"
@@ -101,10 +101,10 @@ func _on_ConfirmTraining_confirmed():
 				problem = rng.randi_range(19, 22)
 			if(PlayerVariables.difficulty == "Very Hard"):
 				problem = rng.randi_range(23, 25)
-			
-			var problem_name = str(year) + " AMC 8 Problem " + str(problem)
+
+			var problem_name = str(year) + " AMC 8 #" + str(problem)
 			PlayerVariables.problem_names[i] = problem_name
-			
+
 			var problem_link = "https://artofproblemsolving.com/wiki/index.php/"
 			problem_link += str(year) + "_AMC_8_Problems#"
 			problem_link += "Problem_" + str(problem)
@@ -121,18 +121,18 @@ func _on_ConfirmTraining_confirmed():
 				problem = rng.randi_range(19, 22)
 			if(PlayerVariables.difficulty == "Very Hard"):
 				problem = rng.randi_range(23, 25)
-			
+
 			var test_types = ["A", "B"]
 			var test_type = test_types[rng.randi_range(0, 1)]
-			
-			var problem_name = str(year) + " AMC 10" + test_type + " Problem " + str(problem)
+
+			var problem_name = str(year) + " AMC 10" + test_type + " #" + str(problem)
 			PlayerVariables.problem_names[i] = problem_name
-			
+
 			var problem_link = "https://artofproblemsolving.com/wiki/index.php/"
 			problem_link += str(year) + "_AMC_10" + test_type + "_Problems#"
 			problem_link += "Problem_" + str(problem)
 			PlayerVariables.problem_links[i] = problem_link
-			
+
 	elif(PlayerVariables.test == "AMC12"):
 		for i in 5:
 			var year = rng.randi_range(2015, 2021)
@@ -145,16 +145,19 @@ func _on_ConfirmTraining_confirmed():
 				problem = rng.randi_range(19, 22)
 			if(PlayerVariables.difficulty == "Very Hard"):
 				problem = rng.randi_range(23, 25)
-			
+
 			var test_types = ["A", "B"]
 			var test_type = test_types[rng.randi_range(0, 1)]
-			
-			var problem_name = str(year) + " AMC 12" + test_type + " Problem " + str(problem)
+
+			var problem_name = str(year) + " AMC 12" + test_type + " #" + str(problem)
 			PlayerVariables.problem_names[i] = problem_name
-			
+
 			var problem_link = "https://artofproblemsolving.com/wiki/index.php/"
 			problem_link += str(year) + "_AMC_12" + test_type + "_Problems#"
 			problem_link += "Problem_" + str(problem)
 			PlayerVariables.problem_links[i] = problem_link
-			
-	get_tree().change_scene("res://Training.tscn")
+
+	if(PlayerVariables.test == "AIME"):
+		get_tree().change_scene("res://TrainingAIME.tscn")
+	else:
+		get_tree().change_scene("res://TrainingAMC.tscn")

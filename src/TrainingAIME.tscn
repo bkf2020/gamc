@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://SetProblemScene.gd" type="Script" id=1]
+[ext_resource path="res://UpdateTrainingAIME.gd" type="Script" id=1]
 
 [node name="Node2D" type="Node2D"]
 
@@ -32,9 +32,9 @@ __meta__ = {
 }
 
 [node name="Problem1Text" type="Label" parent="TrainingPanel"]
-margin_left = 136.0
+margin_left = 72.0
 margin_top = 144.0
-margin_right = 202.0
+margin_right = 138.0
 margin_bottom = 158.0
 rect_pivot_offset = Vector2( -672, 40 )
 text = "Problem 1"
@@ -43,9 +43,9 @@ __meta__ = {
 }
 
 [node name="Problem1Description" type="Label" parent="TrainingPanel"]
-margin_left = 224.0
+margin_left = 160.0
 margin_top = 144.0
-margin_right = 322.0
+margin_right = 258.0
 margin_bottom = 158.0
 rect_pivot_offset = Vector2( -760, 40 )
 text = "2016 AMC 8 #1"
@@ -82,10 +82,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem1Link" type="LinkButton" parent="TrainingPanel"]
+margin_left = 304.0
+margin_top = 144.0
+margin_right = 388.0
+margin_bottom = 158.0
+text = "Problem Link"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Problem2Text" type="Label" parent="TrainingPanel"]
-margin_left = 136.0
+margin_left = 72.0
 margin_top = 264.0
-margin_right = 202.0
+margin_right = 138.0
 margin_bottom = 278.0
 text = "Problem 2"
 __meta__ = {
@@ -93,9 +103,9 @@ __meta__ = {
 }
 
 [node name="Problem2Description" type="Label" parent="TrainingPanel"]
-margin_left = 240.0
+margin_left = 176.0
 margin_top = 264.0
-margin_right = 338.0
+margin_right = 274.0
 margin_bottom = 278.0
 text = "2016 AMC 8 #1"
 __meta__ = {
@@ -132,10 +142,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem2Link" type="LinkButton" parent="TrainingPanel"]
+margin_left = 312.0
+margin_top = 264.0
+margin_right = 396.0
+margin_bottom = 278.0
+focus_mode = 2
+text = "Problem Link"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Problem3Text" type="Label" parent="TrainingPanel"]
-margin_left = 136.0
+margin_left = 72.0
 margin_top = 376.0
-margin_right = 202.0
+margin_right = 138.0
 margin_bottom = 390.0
 text = "Problem 3"
 __meta__ = {
@@ -143,9 +164,9 @@ __meta__ = {
 }
 
 [node name="Problem3Description" type="Label" parent="TrainingPanel"]
-margin_left = 240.0
+margin_left = 176.0
 margin_top = 376.0
-margin_right = 338.0
+margin_right = 274.0
 margin_bottom = 390.0
 text = "2016 AMC 8 #1"
 __meta__ = {
@@ -182,10 +203,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem3Link" type="LinkButton" parent="TrainingPanel"]
+margin_left = 320.0
+margin_top = 376.0
+margin_right = 404.0
+margin_bottom = 390.0
+focus_mode = 2
+text = "Problem Link"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Problem4Text" type="Label" parent="TrainingPanel"]
-margin_left = 144.0
+margin_left = 80.0
 margin_top = 480.0
-margin_right = 210.0
+margin_right = 146.0
 margin_bottom = 494.0
 rect_pivot_offset = Vector2( 104, 48 )
 text = "Problem 4"
@@ -194,9 +226,9 @@ __meta__ = {
 }
 
 [node name="Problem4Description" type="Label" parent="TrainingPanel"]
-margin_left = 232.0
+margin_left = 168.0
 margin_top = 480.0
-margin_right = 330.0
+margin_right = 266.0
 margin_bottom = 494.0
 rect_pivot_offset = Vector2( 16, 48 )
 text = "2016 AMC 8 #1"
@@ -233,10 +265,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem4Link" type="LinkButton" parent="TrainingPanel"]
+margin_left = 304.0
+margin_top = 480.0
+margin_right = 388.0
+margin_bottom = 494.0
+focus_mode = 2
+text = "Problem Link"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Problem5Text" type="Label" parent="TrainingPanel"]
-margin_left = 144.0
+margin_left = 80.0
 margin_top = 584.0
-margin_right = 210.0
+margin_right = 146.0
 margin_bottom = 598.0
 rect_pivot_offset = Vector2( 104, 48 )
 text = "Problem 5"
@@ -245,9 +288,9 @@ __meta__ = {
 }
 
 [node name="Problem5Description" type="Label" parent="TrainingPanel"]
-margin_left = 232.0
+margin_left = 168.0
 margin_top = 584.0
-margin_right = 330.0
+margin_right = 266.0
 margin_bottom = 598.0
 rect_pivot_offset = Vector2( 16, 48 )
 text = "2016 AMC 8 #1"
@@ -283,3 +326,20 @@ placeholder_text = "enter here"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Problem5Link" type="LinkButton" parent="TrainingPanel"]
+margin_left = 312.0
+margin_top = 584.0
+margin_right = 396.0
+margin_bottom = 598.0
+focus_mode = 2
+text = "Problem Link"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="TrainingPanel/Problem1Link" to="TrainingPanel" method="_on_Problem1Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem2Link" to="TrainingPanel" method="_on_Problem2Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem3Link" to="TrainingPanel" method="_on_Problem3Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem4Link" to="TrainingPanel" method="_on_Problem4Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem5Link" to="TrainingPanel" method="_on_Problem5Link_pressed"]
