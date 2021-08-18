@@ -65,99 +65,39 @@ func _on_GetTraining_pressed():
 var rng = RandomNumberGenerator.new()
 func _on_ConfirmTraining_confirmed():
 	rng.randomize()
-	if(PlayerVariables.test == "AIME"):
-		for i in 5:
-			var year = rng.randi_range(2015, 2021)
-			var problem = 0
-			if(PlayerVariables.difficulty == "Easy"):
-				problem = rng.randi_range(1, 5)
-			if(PlayerVariables.difficulty == "Medium"):
-				problem = rng.randi_range(6, 10)
-			if(PlayerVariables.difficulty == "Hard"):
-				problem = rng.randi_range(11, 13)
-			if(PlayerVariables.difficulty == "Very Hard"):
-				problem = rng.randi_range(14, 15)
-
-			var test_types = ["I", "II"]
-			var test_type = test_types[rng.randi_range(0, 1)]
-
-			var problem_name = str(year) + " AIME " + test_type + " #" + str(problem)
-			PlayerVariables.problem_names[i] = problem_name
-
-			var problem_link = "https://artofproblemsolving.com/wiki/index.php/"
-			problem_link += str(year) + "_AIME_"
-			problem_link += test_type + "_Problems#"
-			problem_link += "Problem_" + str(problem)
-			PlayerVariables.problem_links[i] = problem_link
-	elif(PlayerVariables.test == "AMC8"):
-		for i in 5:
-			var year = rng.randi_range(2015, 2020)
-			var problem = 0
-			if(PlayerVariables.difficulty == "Easy"):
-				problem = rng.randi_range(1, 15)
-			if(PlayerVariables.difficulty == "Medium"):
-				problem = rng.randi_range(16, 18)
-			if(PlayerVariables.difficulty == "Hard"):
-				problem = rng.randi_range(19, 22)
-			if(PlayerVariables.difficulty == "Very Hard"):
-				problem = rng.randi_range(23, 25)
-
-			var problem_name = str(year) + " AMC 8 #" + str(problem)
-			PlayerVariables.problem_names[i] = problem_name
-
-			var problem_link = "https://artofproblemsolving.com/wiki/index.php/"
-			problem_link += str(year) + "_AMC_8_Problems#"
-			problem_link += "Problem_" + str(problem)
-			PlayerVariables.problem_links[i] = problem_link
-	elif(PlayerVariables.test == "AMC10"):
-		for i in 5:
-			var year = rng.randi_range(2015, 2021)
-			var problem = 0
-			if(PlayerVariables.difficulty == "Easy"):
-				problem = rng.randi_range(1, 15)
-			if(PlayerVariables.difficulty == "Medium"):
-				problem = rng.randi_range(16, 18)
-			if(PlayerVariables.difficulty == "Hard"):
-				problem = rng.randi_range(19, 22)
-			if(PlayerVariables.difficulty == "Very Hard"):
-				problem = rng.randi_range(23, 25)
-
-			var test_types = ["A", "B"]
-			var test_type = test_types[rng.randi_range(0, 1)]
-
-			var problem_name = str(year) + " AMC 10" + test_type + " #" + str(problem)
-			PlayerVariables.problem_names[i] = problem_name
-
-			var problem_link = "https://artofproblemsolving.com/wiki/index.php/"
-			problem_link += str(year) + "_AMC_10" + test_type + "_Problems#"
-			problem_link += "Problem_" + str(problem)
-			PlayerVariables.problem_links[i] = problem_link
-
-	elif(PlayerVariables.test == "AMC12"):
-		for i in 5:
-			var year = rng.randi_range(2015, 2021)
-			var problem = 0
-			if(PlayerVariables.difficulty == "Easy"):
-				problem = rng.randi_range(1, 15)
-			if(PlayerVariables.difficulty == "Medium"):
-				problem = rng.randi_range(16, 18)
-			if(PlayerVariables.difficulty == "Hard"):
-				problem = rng.randi_range(19, 22)
-			if(PlayerVariables.difficulty == "Very Hard"):
-				problem = rng.randi_range(23, 25)
-
-			var test_types = ["A", "B"]
-			var test_type = test_types[rng.randi_range(0, 1)]
-
-			var problem_name = str(year) + " AMC 12" + test_type + " #" + str(problem)
-			PlayerVariables.problem_names[i] = problem_name
-
-			var problem_link = "https://artofproblemsolving.com/wiki/index.php/"
-			problem_link += str(year) + "_AMC_12" + test_type + "_Problems#"
-			problem_link += "Problem_" + str(problem)
-			PlayerVariables.problem_links[i] = problem_link
-
-	if(PlayerVariables.test == "AIME"):
+	var ltest = PlayerVariables.test.to_lower()
+	var ldiff = PlayerVariables.difficulty.to_lower()
+	if(ldiff == "very hard"):
+		ldiff = "veryhard"
+	
+	var test_data = File.new()
+	test_data.open("res://choices/" + ltest + "/" + ldiff, File.READ)
+	
+	var problem_data = []
+	
+	while(!test_data.eof_reached()):
+		problem_data.push_back(test_data.get_line())
+	
+	var possible = problem_data.size() - 1 # extra line at end
+	var choices = []
+	
+	for i in 5:
+		var curr_choice_idx = rng.randi_range(0, possible - 1)
+		while(choices.find(curr_choice_idx) != -1):
+			curr_choice_idx = rng.randi_range(0, possible - 1)
+		choices.push_back(curr_choice_idx)
+		
+		var curr_choice = problem_data[curr_choice_idx]
+		var data_in_choice = curr_choice.split(",", true, 2)
+		var curr_problem_link = data_in_choice[0]
+		var curr_problem_answer = data_in_choice[1]
+		var curr_problem_name = data_in_choice[2]
+		
+		PlayerVariables.problem_links[i] = curr_problem_link
+		PlayerVariables.problem_answers[i] = curr_problem_answer
+		PlayerVariables.problem_names[i] = curr_problem_name
+		
+	if(ltest == "aime"):
 		get_tree().change_scene("res://TrainingAIME.tscn")
 	else:
 		get_tree().change_scene("res://TrainingAMC.tscn")
