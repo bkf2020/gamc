@@ -4,7 +4,7 @@ BASE=https://artofproblemsolving.com/wiki/index.php
 
 # CLEAN Files
 
-for TEST in aime amc8 amc10 amc10; do
+for TEST in aime amc8 amc10 amc12; do
 	for FILE in easy medium hard veryhard; do
 		rm $TEST/$FILE
 		touch $TEST/$FILE
