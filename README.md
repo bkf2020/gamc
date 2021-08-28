@@ -59,5 +59,5 @@ until you get points to battle.
 		- [x] update the problem link and the label
 	- [ ] check answer after user submits one
 	- [ ] add countdown timer
-	- [ ] make sure two problems aren't repeated (may happen)
+	- [x] make sure two problems aren't repeated (may happen)
 	- [ ] simplify the code! (maybe if there is time...)
