@@ -92,6 +92,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem1Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 125.716
+margin_top = 157.145
+margin_right = 325.716
+margin_bottom = 227.145
+
+[node name="Problem1Invalid" type="AcceptDialog" parent="TrainingPanel"]
+margin_left = 150.0
+margin_top = 158.0
+margin_right = 307.0
+margin_bottom = 219.0
+
 [node name="Problem2Text" type="Label" parent="TrainingPanel"]
 margin_left = 72.0
 margin_top = 264.0
@@ -152,6 +164,21 @@ text = "Problem Link"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Problem2Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 132.45
+margin_top = 263.779
+margin_right = 332.45
+margin_bottom = 333.779
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem2Invalid" type="AcceptDialog" parent="TrainingPanel"]
+margin_left = 144.0
+margin_top = 267.0
+margin_right = 316.0
+margin_bottom = 332.0
 
 [node name="Problem3Text" type="Label" parent="TrainingPanel"]
 margin_left = 72.0
@@ -214,6 +241,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem3Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 135.818
+margin_top = 382.759
+margin_right = 335.818
+margin_bottom = 452.759
+
+[node name="Problem3Invalid" type="AcceptDialog" parent="TrainingPanel"]
+margin_left = 137.796
+margin_top = 375.245
+margin_right = 314.796
+margin_bottom = 451.245
+
 [node name="Problem4Text" type="Label" parent="TrainingPanel"]
 margin_left = 80.0
 margin_top = 480.0
@@ -245,9 +284,9 @@ rect_pivot_offset = Vector2( 80, 24 )
 text = "Unattempted (0/7)"
 
 [node name="Problem4Submit" type="Button" parent="TrainingPanel"]
-margin_left = 232.0
+margin_left = 230.878
 margin_top = 536.0
-margin_right = 312.0
+margin_right = 310.878
 margin_bottom = 556.0
 rect_pivot_offset = Vector2( 16, -8 )
 text = "Submit"
@@ -272,6 +311,21 @@ margin_right = 388.0
 margin_bottom = 494.0
 focus_mode = 2
 text = "Problem Link"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem4Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 130.206
+margin_top = 490.516
+margin_right = 330.206
+margin_bottom = 560.516
+
+[node name="Problem4Invalid" type="AcceptDialog" parent="TrainingPanel"]
+margin_left = 134.0
+margin_top = 480.0
+margin_right = 318.0
+margin_bottom = 564.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -338,8 +392,28 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem5Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 129.083
+margin_top = 593.782
+margin_right = 329.083
+margin_bottom = 663.782
+
+[node name="Problem5Invalid" type="AcceptDialog" parent="TrainingPanel"]
+margin_left = 128.775
+margin_top = 585.735
+margin_right = 320.775
+margin_bottom = 669.735
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="TrainingPanel/Problem1Submit" to="TrainingPanel" method="_on_Problem1Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem1Link" to="TrainingPanel" method="_on_Problem1Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem2Submit" to="TrainingPanel" method="_on_Problem2Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem2Link" to="TrainingPanel" method="_on_Problem2Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem3Submit" to="TrainingPanel" method="_on_Problem3Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem3Link" to="TrainingPanel" method="_on_Problem3Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem4Submit" to="TrainingPanel" method="_on_Problem4Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem4Link" to="TrainingPanel" method="_on_Problem4Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem5Submit" to="TrainingPanel" method="_on_Problem5Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem5Link" to="TrainingPanel" method="_on_Problem5Link_pressed"]

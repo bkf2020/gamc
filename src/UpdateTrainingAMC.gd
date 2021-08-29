@@ -30,3 +30,40 @@ func _on_Problem4Link_pressed():
 	OS.shell_open(PlayerVariables.problem_links[3])
 func _on_Problem5Link_pressed():
 	OS.shell_open(PlayerVariables.problem_links[4])
+	
+
+func _on_Problem1Submit_pressed():
+	var player_answer = get_node("Problem1Answer").text
+	var are_you_sure = "You selected " + player_answer + ". Are you sure?"
+	get_node("Problem1Confirm").dialog_text = are_you_sure
+	get_node("Problem1Confirm").get_ok().text = "Yes"
+	get_node("Problem1Confirm").get_cancel().text = "No"
+	get_node("Problem1Confirm").show()
+func _on_Problem2Submit_pressed():
+	var player_answer = get_node("Problem2Answer").text
+	var are_you_sure = "You selected " + player_answer + ". Are you sure?"
+	get_node("Problem2Confirm").dialog_text = are_you_sure
+	get_node("Problem2Confirm").get_ok().text = "Yes"
+	get_node("Problem2Confirm").get_cancel().text = "No"
+	get_node("Problem2Confirm").show()
+func _on_Problem3Submit_pressed():
+	var player_answer = get_node("Problem3Answer").text
+	var are_you_sure = "You selected " + player_answer + ". Are you sure?"
+	get_node("Problem3Confirm").dialog_text = are_you_sure
+	get_node("Problem3Confirm").get_ok().text = "Yes"
+	get_node("Problem3Confirm").get_cancel().text = "No"
+	get_node("Problem3Confirm").show()
+func _on_Problem4Submit_pressed():
+	var player_answer = get_node("Problem4Answer").text
+	var are_you_sure = "You selected " + player_answer + ". Are you sure?"
+	get_node("Problem4Confirm").dialog_text = are_you_sure
+	get_node("Problem4Confirm").get_ok().text = "Yes"
+	get_node("Problem4Confirm").get_cancel().text = "No"
+	get_node("Problem4Confirm").show()
+func _on_Problem5Submit_pressed():
+	var player_answer = get_node("Problem5Answer").text
+	var are_you_sure = "You selected " + player_answer + ". Are you sure?"
+	get_node("Problem5Confirm").dialog_text = are_you_sure
+	get_node("Problem5Confirm").get_ok().text = "Yes"
+	get_node("Problem5Confirm").get_cancel().text = "No"
+	get_node("Problem5Confirm").show()

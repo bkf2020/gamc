@@ -5,10 +5,10 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="TrainingPanel" type="Panel" parent="."]
-margin_left = 256.0
-margin_top = 32.0
-margin_right = 728.0
-margin_bottom = 744.0
+margin_left = 262.236
+margin_top = 23.9819
+margin_right = 734.236
+margin_bottom = 735.982
 rect_pivot_offset = Vector2( 264, 432 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -95,6 +95,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem1Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 129.163
+margin_top = 141.84
+margin_right = 372.163
+margin_bottom = 231.84
+dialog_text = "test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Problem2Text" type="Label" parent="TrainingPanel"]
 margin_left = 96.0
 margin_top = 264.0
@@ -158,6 +168,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem2Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 129.548
+margin_top = 258.813
+margin_right = 372.548
+margin_bottom = 348.813
+dialog_text = "test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Problem3Text" type="Label" parent="TrainingPanel"]
 margin_left = 96.0
 margin_top = 376.0
@@ -217,6 +237,16 @@ margin_right = 428.0
 margin_bottom = 390.0
 focus_mode = 2
 text = "Problem Link"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Problem3Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 129.548
+margin_top = 372.176
+margin_right = 372.548
+margin_bottom = 462.176
+dialog_text = "test"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -286,6 +316,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem4Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 127.429
+margin_top = 485.538
+margin_right = 370.429
+margin_bottom = 575.538
+dialog_text = "test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Problem5Text" type="Label" parent="TrainingPanel"]
 margin_left = 104.0
 margin_top = 584.0
@@ -351,8 +391,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Problem5Confirm" type="ConfirmationDialog" parent="TrainingPanel"]
+margin_left = 128.489
+margin_top = 603.139
+margin_right = 371.489
+margin_bottom = 693.139
+dialog_text = "test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="TrainingPanel/Problem1Submit" to="TrainingPanel" method="_on_Problem1Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem1Link" to="TrainingPanel" method="_on_Problem1Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem2Submit" to="TrainingPanel" method="_on_Problem2Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem2Link" to="TrainingPanel" method="_on_Problem2Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem3Submit" to="TrainingPanel" method="_on_Problem3Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem3Link" to="TrainingPanel" method="_on_Problem3Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem4Submit" to="TrainingPanel" method="_on_Problem4Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem4Link" to="TrainingPanel" method="_on_Problem4Link_pressed"]
+[connection signal="pressed" from="TrainingPanel/Problem5Submit" to="TrainingPanel" method="_on_Problem5Submit_pressed"]
 [connection signal="pressed" from="TrainingPanel/Problem5Link" to="TrainingPanel" method="_on_Problem5Link_pressed"]
