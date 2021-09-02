@@ -1,18 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://GetTraining.gd" type="Script" id=1]
-[ext_resource path="res://fonts/OpenSans-Regular.ttf" type="DynamicFontData" id=2]
-
-[sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 2 )
+[ext_resource path="res://opensans.tres" type="DynamicFont" id=2]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Panel" type="Panel" parent="."]
 margin_left = 320.0
 margin_top = 80.0
-margin_right = 704.0
-margin_bottom = 528.0
+margin_right = 728.0
+margin_bottom = 547.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -21,10 +18,10 @@ __meta__ = {
 [node name="DifficultyLabel" type="Label" parent="Panel"]
 anchor_right = 0.083
 anchor_bottom = 0.031
-margin_left = 136.0
-margin_top = 208.0
-margin_right = 227.128
-margin_bottom = 208.112
+margin_left = 119.964
+margin_top = 191.964
+margin_right = 230.092
+margin_bottom = 201.076
 text = "Select the difficulty"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -33,10 +30,10 @@ __meta__ = {
 [node name="TestLabel" type="Label" parent="Panel"]
 anchor_right = 0.083
 anchor_bottom = 0.031
-margin_left = 136.0
-margin_top = 128.0
-margin_right = 227.128
-margin_bottom = 128.112
+margin_left = 127.982
+margin_top = 114.637
+margin_right = 219.11
+margin_bottom = 123.749
 text = "Select the test"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -55,10 +52,10 @@ __meta__ = {
 }
 
 [node name="DifficultySelection" type="OptionButton" parent="Panel"]
-margin_left = 136.0
-margin_top = 224.0
-margin_right = 263.0
-margin_bottom = 248.0
+margin_left = 130.655
+margin_top = 220.436
+margin_right = 257.655
+margin_bottom = 249.436
 text = "Easy"
 items = [ "Easy", null, false, 0, null, "Medium", null, false, 1, null, "Hard", null, false, 2, null, "Very Hard", null, false, 3, null ]
 selected = 0
@@ -67,11 +64,11 @@ __meta__ = {
 }
 
 [node name="TrainingLabel" type="Label" parent="Panel"]
-margin_left = 120.0
-margin_top = 40.0
-margin_right = 263.0
-margin_bottom = 88.0
-custom_fonts/font = SubResource( 1 )
+margin_left = 107.527
+margin_top = 21.2911
+margin_right = 273.527
+margin_bottom = 96.2911
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Select your training:
 Pick a test first,
@@ -82,10 +79,10 @@ __meta__ = {
 }
 
 [node name="DDLabel" type="Label" parent="Panel"]
-margin_left = 72.0
-margin_top = 296.0
-margin_right = 355.0
-margin_bottom = 395.0
+margin_left = 47.0547
+margin_top = 296.891
+margin_right = 375.055
+margin_bottom = 449.891
 text = "For the AIME Test, the difficulties represent:
 
 Easy = Problems 1 to 5
@@ -97,10 +94,10 @@ __meta__ = {
 }
 
 [node name="GetTraining" type="Button" parent="Panel"]
-margin_left = 144.0
-margin_top = 264.0
-margin_right = 235.0
-margin_bottom = 284.0
+margin_left = 136.873
+margin_top = 261.327
+margin_right = 242.873
+margin_bottom = 290.327
 text = "Get training!"
 __meta__ = {
 "_edit_use_anchors_": false
