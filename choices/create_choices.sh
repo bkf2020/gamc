@@ -79,28 +79,28 @@ for YEAR in $(seq 2015 2021); do
 	for TEST_TYPE in A B; do
 		for PROBLEM in $(seq 15); do
 			echo -n "${BASE}/${YEAR}_AMC_10${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc10/easy
-			echo -n "answers/amc10/${TEST_TYPE}/answers.txt," >> amc10/easy
+			echo -n "answers/amc10/${YEAR}/${TEST_TYPE}/answers.txt," >> amc10/easy
 			echo -n "${YEAR} AMC 10${TEST_TYPE} #${PROBLEM}," >> amc10/easy
 			echo "${PROBLEM}" >> amc10/easy
 		done
 
 		for PROBLEM in 16 17 18; do
 			echo -n "${BASE}/${YEAR}_AMC_10${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc10/medium
-			echo -n "answers/amc10/${TEST_TYPE}/answers.txt," >> amc10/medium
+			echo -n "answers/amc10/${YEAR}/${TEST_TYPE}/answers.txt," >> amc10/medium
 			echo -n "${YEAR} AMC 10${TEST_TYPE} #${PROBLEM}," >> amc10/medium
 			echo "${PROBLEM}" >> amc10/medium
 		done
 
 		for PROBLEM in 19 20 21 22; do
 			echo -n "${BASE}/${YEAR}_AMC_10${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc10/hard
-			echo -n "answers/amc10/${TEST_TYPE}/answers.txt," >> amc10/hard
+			echo -n "answers/amc10/${YEAR}/${TEST_TYPE}/answers.txt," >> amc10/hard
 			echo -n "${YEAR} AMC 10${TEST_TYPE} #${PROBLEM}," >> amc10/hard
 			echo "${PROBLEM}" >> amc10/hard
 		done
 
 		for PROBLEM in 23 24 25; do
 			echo -n "${BASE}/${YEAR}_AMC_10${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc10/veryhard
-			echo -n "answers/amc10/${TEST_TYPE}/answers.txt," >> amc10/veryhard
+			echo -n "answers/amc10/${YEAR}/${TEST_TYPE}/answers.txt," >> amc10/veryhard
 			echo -n "${YEAR} AMC 10${TEST_TYPE} #${PROBLEM}," >> amc10/veryhard
 			echo "${PROBLEM}" >> amc10/veryhard
 		done
@@ -112,28 +112,28 @@ for YEAR in $(seq 2015 2021); do
 	for TEST_TYPE in A B; do
 		for PROBLEM in $(seq 15); do
 			echo -n "${BASE}/${YEAR}_AMC_12${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc12/easy
-			echo -n "answers/amc12/${TEST_TYPE}/answers.txt," >> amc12/easy
+			echo -n "answers/amc12/${YEAR}/${TEST_TYPE}/answers.txt," >> amc12/easy
 			echo -n "${YEAR} AMC 12${TEST_TYPE} #${PROBLEM}," >> amc12/easy
 			echo "${PROBLEM}" >> amc12/easy
 		done
 
 		for PROBLEM in $(seq 16 18); do
 			echo -n "${BASE}/${YEAR}_AMC_12${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc12/medium
-			echo -n "answers/amc12/${TEST_TYPE}/answers.txt," >> amc12/medium
+			echo -n "answers/amc12/${YEAR}/${TEST_TYPE}/answers.txt," >> amc12/medium
 			echo -n "${YEAR} AMC 12${TEST_TYPE} #${PROBLEM}," >> amc12/medium
 			echo "${PROBLEM}" >> amc12/medium
 		done
 
 		for PROBLEM in $(seq 19 22); do
 			echo -n "${BASE}/${YEAR}_AMC_12${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc12/hard
-			echo -n "answers/amc12/${TEST_TYPE}/answers.txt," >> amc12/hard
+			echo -n "answers/amc12/${YEAR}/${TEST_TYPE}/answers.txt," >> amc12/hard
 			echo -n "${YEAR} AMC 12${TEST_TYPE} #${PROBLEM}," >> amc12/hard
 			echo "${PROBLEM}" >> amc12/hard
 		done
 
 		for PROBLEM in $(seq 23 25); do
 			echo -n "${BASE}/${YEAR}_AMC_12${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc12/veryhard
-			echo -n "answers/amc12/${TEST_TYPE}/answers.txt," >> amc12/veryhard
+			echo -n "answers/amc12/${YEAR}/${TEST_TYPE}/answers.txt," >> amc12/veryhard
 			echo -n "${YEAR} AMC 12${TEST_TYPE} #${PROBLEM}," >> amc12/veryhard
 			echo "${PROBLEM}" >> amc12/veryhard
 		done
