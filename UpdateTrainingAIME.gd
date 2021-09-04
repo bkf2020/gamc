@@ -34,8 +34,10 @@ func _on_Problem5Link_pressed():
 func valid_format(var input):
 	return input.is_valid_integer() and 0 <= int(input) and int(input) <= 999
 
+var player_answer = ""
+
 func _on_Problem1Submit_pressed():
-	var player_answer = get_node("Problem1Answer").text
+	player_answer = get_node("Problem1Answer").text
 	if(valid_format(player_answer)):
 		var are_you_sure = "Your answer is " + player_answer + ". Are you sure?"
 		get_node("Problem1Confirm").dialog_text = are_you_sure
@@ -48,7 +50,7 @@ func _on_Problem1Submit_pressed():
 		get_node("Problem1Invalid").dialog_text = invalid_format
 		get_node("Problem1Invalid").show()
 func _on_Problem2Submit_pressed():
-	var player_answer = get_node("Problem2Answer").text
+	player_answer = get_node("Problem2Answer").text
 	if(valid_format(player_answer)):
 		var are_you_sure = "Your answer is " + player_answer + ". Are you sure?"
 		get_node("Problem2Confirm").dialog_text = are_you_sure
@@ -61,7 +63,7 @@ func _on_Problem2Submit_pressed():
 		get_node("Problem2Invalid").dialog_text = invalid_format
 		get_node("Problem2Invalid").show()
 func _on_Problem3Submit_pressed():
-	var player_answer = get_node("Problem3Answer").text
+	player_answer = get_node("Problem3Answer").text
 	if(valid_format(player_answer)):
 		var are_you_sure = "Your answer is " + player_answer + ". Are you sure?"
 		get_node("Problem3Confirm").dialog_text = are_you_sure
@@ -74,7 +76,7 @@ func _on_Problem3Submit_pressed():
 		get_node("Problem3Invalid").dialog_text = invalid_format
 		get_node("Problem3Invalid").show()
 func _on_Problem4Submit_pressed():
-	var player_answer = get_node("Problem4Answer").text
+	player_answer = get_node("Problem4Answer").text
 	if(valid_format(player_answer)):
 		var are_you_sure = "Your answer is " + player_answer + ". Are you sure?"
 		get_node("Problem4Confirm").dialog_text = are_you_sure
@@ -87,7 +89,7 @@ func _on_Problem4Submit_pressed():
 		get_node("Problem4Invalid").dialog_text = invalid_format
 		get_node("Problem4Invalid").show()
 func _on_Problem5Submit_pressed():
-	var player_answer = get_node("Problem5Answer").text
+	player_answer = get_node("Problem5Answer").text
 	if(valid_format(player_answer)):
 		var are_you_sure = "Your answer is " + player_answer + ". Are you sure?"
 		get_node("Problem5Confirm").dialog_text = are_you_sure
@@ -99,3 +101,76 @@ func _on_Problem5Submit_pressed():
 		invalid_format += " It should be an integer between 0 and 999"
 		get_node("Problem5Invalid").dialog_text = invalid_format
 		get_node("Problem5Invalid").show()
+
+var problem_points = [7, 7, 7, 7, 7]
+
+func _on_Problem1Confirm_confirmed():
+	var answers_file = File.new()
+	answers_file.open("res://" + PlayerVariables.problem_answers[0], File.READ)
+	var answers = ["A"]
+	while(!answers_file.eof_reached()):
+		answers.push_back(answers_file.get_line())
+	var correct_answer = answers[PlayerVariables.problem_nums[0]]
+	if(int(player_answer) == int(correct_answer)):
+		get_node("Problem1Status").text = "Correct! (" + str(problem_points[0]) + "/7)"
+		get_node("Problem1Submit").hide()
+		get_node("Problem1Answer").hide()
+	else:
+		get_node("Problem1Status").text = "Wrong answer! (0/7)"
+		problem_points[0] = max(problem_points[0] - 2, 1)
+func _on_Problem2Confirm_confirmed():
+	var answers_file = File.new()
+	answers_file.open("res://" + PlayerVariables.problem_answers[1], File.READ)
+	var answers = ["A"]
+	while(!answers_file.eof_reached()):
+		answers.push_back(answers_file.get_line())
+	var correct_answer = answers[PlayerVariables.problem_nums[1]]
+	if(int(player_answer) == int(correct_answer)):
+		get_node("Problem2Status").text = "Correct! (" + str(problem_points[1]) + "/7)"
+		get_node("Problem2Submit").hide()
+		get_node("Problem2Answer").hide()
+	else:
+		get_node("Problem2Status").text = "Wrong answer! (0/7)"
+		problem_points[1] = max(problem_points[1] - 2, 1)
+func _on_Problem3Confirm_confirmed():
+	var answers_file = File.new()
+	answers_file.open("res://" + PlayerVariables.problem_answers[2], File.READ)
+	var answers = ["A"]
+	while(!answers_file.eof_reached()):
+		answers.push_back(answers_file.get_line())
+	var correct_answer = answers[PlayerVariables.problem_nums[2]]
+	if(int(player_answer) == int(correct_answer)):
+		get_node("Problem3Status").text = "Correct! (" + str(problem_points[2]) + "/7)"
+		get_node("Problem3Submit").hide()
+		get_node("Problem3Answer").hide()
+	else:
+		get_node("Problem3Status").text = "Wrong answer! (0/7)"
+		problem_points[2] = max(problem_points[2] - 2, 1)
+func _on_Problem4Confirm_confirmed():
+	var answers_file = File.new()
+	answers_file.open("res://" + PlayerVariables.problem_answers[3], File.READ)
+	var answers = ["A"]
+	while(!answers_file.eof_reached()):
+		answers.push_back(answers_file.get_line())
+	var correct_answer = answers[PlayerVariables.problem_nums[3]]
+	if(int(player_answer) == int(correct_answer)):
+		get_node("Problem4Status").text = "Correct! (" + str(problem_points[3]) + "/7)"
+		get_node("Problem4Submit").hide()
+		get_node("Problem4Answer").hide()
+	else:
+		get_node("Problem4Status").text = "Wrong answer! (0/7)"
+		problem_points[3] = max(problem_points[3] - 2, 1)
+func _on_Problem5Confirm_confirmed():
+	var answers_file = File.new()
+	answers_file.open("res://" + PlayerVariables.problem_answers[4], File.READ)
+	var answers = ["A"]
+	while(!answers_file.eof_reached()):
+		answers.push_back(answers_file.get_line())
+	var correct_answer = answers[PlayerVariables.problem_nums[4]]
+	if(int(player_answer) == int(correct_answer)):
+		get_node("Problem5Status").text = "Correct! (" + str(problem_points[4]) + "/7)"
+		get_node("Problem5Submit").hide()
+		get_node("Problem5Answer").hide()
+	else:
+		get_node("Problem5Status").text = "Wrong answer! (0/7)"
+		problem_points[4] = max(problem_points[4] - 2, 1)
