@@ -1,3 +1,29 @@
+"""
+NOTE: This file is licensed under the MIT License
+
+MIT License
+
+Copyright (c) 2021 bkf2020
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+
 from bs4 import BeautifulSoup
 from shutil import copyfile
 import os
@@ -42,7 +68,7 @@ if(test_name == "AMC8"):
 	answers_div = answers_div.ol
 	answers_div = answers_div.li
 	out = open("../amc8/" + year_str + "/answers.txt", 'w')
-	
+
 	for i in range(0, 25):
 		out.write(str(answers_div.text))
 		out.write('\n')
@@ -58,14 +84,14 @@ elif(test_name == "AMC10"):
 	answers_div = answers_div.ol
 	answers_div = answers_div.li
 	out = open("../amc10/" + year_str + "/A/answers.txt", 'w')
-	
+
 	for i in range(0, 25):
 		out.write(str(answers_div.text))
 		out.write('\n')
 		if(i != 24):
 			answers_div = answers_div.next_sibling
 			answers_div = answers_div.next_sibling
-	
+
 	url = "https://artofproblemsolving.com/wiki/index.php/" + year_str + "_AMC_10B_Answer_Key"
 	req = requests.get(url)
 	soup = BeautifulSoup(req.text, 'html.parser')
@@ -73,7 +99,7 @@ elif(test_name == "AMC10"):
 	answers_div = answers_div.ol
 	answers_div = answers_div.li
 	out = open("../amc10/" + year_str + "/B/answers.txt", 'w')
-	
+
 	for i in range(0, 25):
 		out.write(str(answers_div.text))
 		out.write('\n')
@@ -89,14 +115,14 @@ elif(test_name == "AMC12"):
 	answers_div = answers_div.ol
 	answers_div = answers_div.li
 	out = open("../amc12/" + year_str + "/A/answers.txt", 'w')
-	
+
 	for i in range(0, 25):
 		out.write(str(answers_div.text))
 		out.write('\n')
 		if(i != 24):
 			answers_div = answers_div.next_sibling
 			answers_div = answers_div.next_sibling
-	
+
 	url = "https://artofproblemsolving.com/wiki/index.php/" + year_str + "_AMC_12B_Answer_Key"
 	req = requests.get(url)
 	soup = BeautifulSoup(req.text, 'html.parser')
@@ -104,7 +130,7 @@ elif(test_name == "AMC12"):
 	answers_div = answers_div.ol
 	answers_div = answers_div.li
 	out = open("../amc12/" + year_str + "/B/answers.txt", 'w')
-	
+
 	for i in range(0, 25):
 		out.write(str(answers_div.text))
 		out.write('\n')
@@ -120,14 +146,14 @@ elif(test_name == "AIME"):
 	answers_div = answers_div.ol
 	answers_div = answers_div.li
 	out = open("../aime/" + year_str + "/I/answers.txt", 'w')
-	
+
 	for i in range(0, 15):
 		out.write(str(answers_div.text))
 		out.write('\n')
 		if(i != 14):
 			answers_div = answers_div.next_sibling
 			answers_div = answers_div.next_sibling
-	
+
 	url = "https://artofproblemsolving.com/wiki/index.php/" + year_str + "_AIME_II_Answer_Key"
 	req = requests.get(url)
 	soup = BeautifulSoup(req.text, 'html.parser')
@@ -135,7 +161,7 @@ elif(test_name == "AIME"):
 	answers_div = answers_div.ol
 	answers_div = answers_div.li
 	out = open("../aime/" + year_str + "/II/answers.txt", 'w')
-	
+
 	for i in range(0, 15):
 		out.write(str(answers_div.text))
 		out.write('\n')

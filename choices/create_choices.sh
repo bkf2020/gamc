@@ -1,3 +1,5 @@
+# EVERYTHING IN THE CHOICES FOLDER (THIS FOLDER) IS LICENSED UNDER CC0
+
 #!/bin/sh
 
 BASE=https://artofproblemsolving.com/wiki/index.php
