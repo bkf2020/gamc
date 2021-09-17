@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://UpdateTrainingAMC.gd" type="Script" id=1]
+[ext_resource path="res://TrainingTimer.gd" type="Script" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -8,7 +9,7 @@
 margin_left = 262.0
 margin_top = 24.0
 margin_right = 734.0
-margin_bottom = 775.0
+margin_bottom = 809.0
 rect_pivot_offset = Vector2( 264, 432 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -17,9 +18,9 @@ __meta__ = {
 
 [node name="Training" type="Label" parent="TrainingPanel"]
 margin_left = -24.0
-margin_top = 8.0
+margin_top = 43.0
 margin_right = 502.0
-margin_bottom = 107.0
+margin_bottom = 196.0
 text = "Training
 Each problem is originally worth 7 points.
 If you get it wrong, the value of the problem
@@ -33,9 +34,9 @@ __meta__ = {
 
 [node name="Problem1Text" type="Label" parent="TrainingPanel"]
 margin_left = 89.0
-margin_top = 194.0
+margin_top = 229.0
 margin_right = 167.0
-margin_bottom = 217.0
+margin_bottom = 252.0
 rect_pivot_offset = Vector2( -672, 40 )
 text = "Problem 1"
 __meta__ = {
@@ -44,9 +45,9 @@ __meta__ = {
 
 [node name="Problem1Description" type="Label" parent="TrainingPanel"]
 margin_left = 177.0
-margin_top = 194.0
+margin_top = 229.0
 margin_right = 287.0
-margin_bottom = 217.0
+margin_bottom = 252.0
 rect_pivot_offset = Vector2( -760, 40 )
 text = "2016 AMC 8 #1"
 __meta__ = {
@@ -55,17 +56,17 @@ __meta__ = {
 
 [node name="Problem1Status" type="Label" parent="TrainingPanel"]
 margin_left = 153.0
-margin_top = 218.0
+margin_top = 253.0
 margin_right = 293.0
-margin_bottom = 241.0
+margin_bottom = 276.0
 rect_pivot_offset = Vector2( -696, 16 )
 text = "Unattempted (0/7)"
 
 [node name="Problem1Submit" type="Button" parent="TrainingPanel"]
 margin_left = 217.0
-margin_top = 250.0
+margin_top = 285.0
 margin_right = 297.0
-margin_bottom = 279.0
+margin_bottom = 314.0
 rect_pivot_offset = Vector2( -760, -16 )
 text = "Submit"
 __meta__ = {
@@ -74,9 +75,9 @@ __meta__ = {
 
 [node name="Problem1Answer" type="OptionButton" parent="TrainingPanel"]
 margin_left = 129.0
-margin_top = 250.0
+margin_top = 285.0
 margin_right = 185.0
-margin_bottom = 279.0
+margin_bottom = 314.0
 rect_pivot_offset = Vector2( -672, -16 )
 text = "A"
 items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
@@ -87,9 +88,9 @@ __meta__ = {
 
 [node name="Problem1Link" type="LinkButton" parent="TrainingPanel"]
 margin_left = 331.0
-margin_top = 194.0
+margin_top = 229.0
 margin_right = 430.0
-margin_bottom = 217.0
+margin_bottom = 252.0
 text = "Problem Link"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -107,9 +108,9 @@ __meta__ = {
 
 [node name="Problem2Text" type="Label" parent="TrainingPanel"]
 margin_left = 89.0
-margin_top = 314.0
+margin_top = 349.0
 margin_right = 167.0
-margin_bottom = 337.0
+margin_bottom = 372.0
 text = "Problem 2"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -117,9 +118,9 @@ __meta__ = {
 
 [node name="Problem2Description" type="Label" parent="TrainingPanel"]
 margin_left = 177.0
-margin_top = 314.0
+margin_top = 349.0
 margin_right = 287.0
-margin_bottom = 337.0
+margin_bottom = 372.0
 text = "2016 AMC 8 #1"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -127,9 +128,9 @@ __meta__ = {
 
 [node name="Problem2Status" type="Label" parent="TrainingPanel"]
 margin_left = 161.0
-margin_top = 338.0
+margin_top = 373.0
 margin_right = 301.0
-margin_bottom = 361.0
+margin_bottom = 396.0
 text = "Unattempted (0/7)"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -137,9 +138,9 @@ __meta__ = {
 
 [node name="Problem2Submit" type="Button" parent="TrainingPanel"]
 margin_left = 217.0
-margin_top = 362.0
+margin_top = 397.0
 margin_right = 297.0
-margin_bottom = 391.0
+margin_bottom = 426.0
 text = "Submit"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -147,9 +148,9 @@ __meta__ = {
 
 [node name="Problem2Answer" type="OptionButton" parent="TrainingPanel"]
 margin_left = 129.0
-margin_top = 362.0
+margin_top = 397.0
 margin_right = 185.0
-margin_bottom = 391.0
+margin_bottom = 426.0
 text = "A"
 items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
 selected = 0
@@ -159,9 +160,9 @@ __meta__ = {
 
 [node name="Problem2Link" type="LinkButton" parent="TrainingPanel"]
 margin_left = 327.0
-margin_top = 314.0
+margin_top = 349.0
 margin_right = 426.0
-margin_bottom = 337.0
+margin_bottom = 372.0
 focus_mode = 2
 text = "Problem Link"
 __meta__ = {
@@ -180,9 +181,9 @@ __meta__ = {
 
 [node name="Problem3Text" type="Label" parent="TrainingPanel"]
 margin_left = 89.0
-margin_top = 426.0
+margin_top = 461.0
 margin_right = 167.0
-margin_bottom = 449.0
+margin_bottom = 484.0
 text = "Problem 3"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -190,9 +191,9 @@ __meta__ = {
 
 [node name="Problem3Description" type="Label" parent="TrainingPanel"]
 margin_left = 193.0
-margin_top = 426.0
+margin_top = 461.0
 margin_right = 303.0
-margin_bottom = 449.0
+margin_bottom = 484.0
 text = "2016 AMC 8 #1"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -200,9 +201,9 @@ __meta__ = {
 
 [node name="Problem3Status" type="Label" parent="TrainingPanel"]
 margin_left = 169.0
-margin_top = 450.0
+margin_top = 485.0
 margin_right = 309.0
-margin_bottom = 473.0
+margin_bottom = 508.0
 text = "Unattempted (0/7)"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -210,9 +211,9 @@ __meta__ = {
 
 [node name="Problem3Submit" type="Button" parent="TrainingPanel"]
 margin_left = 233.0
-margin_top = 474.0
+margin_top = 509.0
 margin_right = 313.0
-margin_bottom = 503.0
+margin_bottom = 538.0
 text = "Submit"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -220,9 +221,9 @@ __meta__ = {
 
 [node name="Problem3Answer" type="OptionButton" parent="TrainingPanel"]
 margin_left = 145.0
-margin_top = 474.0
+margin_top = 509.0
 margin_right = 201.0
-margin_bottom = 503.0
+margin_bottom = 538.0
 text = "A"
 items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
 selected = 0
@@ -232,9 +233,9 @@ __meta__ = {
 
 [node name="Problem3Link" type="LinkButton" parent="TrainingPanel"]
 margin_left = 337.0
-margin_top = 426.0
+margin_top = 461.0
 margin_right = 436.0
-margin_bottom = 449.0
+margin_bottom = 484.0
 focus_mode = 2
 text = "Problem Link"
 __meta__ = {
@@ -253,9 +254,9 @@ __meta__ = {
 
 [node name="Problem4Text" type="Label" parent="TrainingPanel"]
 margin_left = 97.0
-margin_top = 530.0
+margin_top = 565.0
 margin_right = 175.0
-margin_bottom = 553.0
+margin_bottom = 588.0
 rect_pivot_offset = Vector2( 104, 48 )
 text = "Problem 4"
 __meta__ = {
@@ -264,9 +265,9 @@ __meta__ = {
 
 [node name="Problem4Description" type="Label" parent="TrainingPanel"]
 margin_left = 185.0
-margin_top = 530.0
+margin_top = 565.0
 margin_right = 295.0
-margin_bottom = 553.0
+margin_bottom = 588.0
 rect_pivot_offset = Vector2( 16, 48 )
 text = "2016 AMC 8 #1"
 __meta__ = {
@@ -275,17 +276,17 @@ __meta__ = {
 
 [node name="Problem4Status" type="Label" parent="TrainingPanel"]
 margin_left = 161.0
-margin_top = 554.0
+margin_top = 589.0
 margin_right = 301.0
-margin_bottom = 577.0
+margin_bottom = 612.0
 rect_pivot_offset = Vector2( 80, 24 )
 text = "Unattempted (0/7)"
 
 [node name="Problem4Submit" type="Button" parent="TrainingPanel"]
 margin_left = 225.0
-margin_top = 586.0
+margin_top = 621.0
 margin_right = 305.0
-margin_bottom = 615.0
+margin_bottom = 650.0
 rect_pivot_offset = Vector2( 16, -8 )
 text = "Submit"
 __meta__ = {
@@ -294,9 +295,9 @@ __meta__ = {
 
 [node name="Problem4Answer" type="OptionButton" parent="TrainingPanel"]
 margin_left = 137.0
-margin_top = 586.0
+margin_top = 621.0
 margin_right = 193.0
-margin_bottom = 615.0
+margin_bottom = 650.0
 rect_pivot_offset = Vector2( 104, -8 )
 text = "A"
 items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
@@ -307,9 +308,9 @@ __meta__ = {
 
 [node name="Problem4Link" type="LinkButton" parent="TrainingPanel"]
 margin_left = 331.0
-margin_top = 530.0
+margin_top = 565.0
 margin_right = 430.0
-margin_bottom = 553.0
+margin_bottom = 588.0
 focus_mode = 2
 text = "Problem Link"
 __meta__ = {
@@ -328,9 +329,9 @@ __meta__ = {
 
 [node name="Problem5Text" type="Label" parent="TrainingPanel"]
 margin_left = 97.0
-margin_top = 634.0
+margin_top = 669.0
 margin_right = 175.0
-margin_bottom = 657.0
+margin_bottom = 692.0
 rect_pivot_offset = Vector2( 104, 48 )
 text = "Problem 5"
 __meta__ = {
@@ -339,9 +340,9 @@ __meta__ = {
 
 [node name="Problem5Description" type="Label" parent="TrainingPanel"]
 margin_left = 185.0
-margin_top = 634.0
+margin_top = 669.0
 margin_right = 295.0
-margin_bottom = 657.0
+margin_bottom = 692.0
 rect_pivot_offset = Vector2( 16, 48 )
 text = "2016 AMC 8 #1"
 __meta__ = {
@@ -350,17 +351,17 @@ __meta__ = {
 
 [node name="Problem5Status" type="Label" parent="TrainingPanel"]
 margin_left = 161.0
-margin_top = 658.0
+margin_top = 693.0
 margin_right = 301.0
-margin_bottom = 681.0
+margin_bottom = 716.0
 rect_pivot_offset = Vector2( 80, 24 )
 text = "Unattempted (0/7)"
 
 [node name="Problem5Submit" type="Button" parent="TrainingPanel"]
 margin_left = 225.0
-margin_top = 690.0
+margin_top = 725.0
 margin_right = 305.0
-margin_bottom = 719.0
+margin_bottom = 754.0
 rect_pivot_offset = Vector2( 16, -8 )
 text = "Submit"
 __meta__ = {
@@ -369,9 +370,9 @@ __meta__ = {
 
 [node name="Problem5Answer" type="OptionButton" parent="TrainingPanel"]
 margin_left = 137.0
-margin_top = 690.0
+margin_top = 725.0
 margin_right = 193.0
-margin_bottom = 719.0
+margin_bottom = 754.0
 rect_pivot_offset = Vector2( 104, -8 )
 text = "A"
 items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
@@ -382,9 +383,9 @@ __meta__ = {
 
 [node name="Problem5Link" type="LinkButton" parent="TrainingPanel"]
 margin_left = 329.0
-margin_top = 634.0
+margin_top = 669.0
 margin_right = 428.0
-margin_bottom = 657.0
+margin_bottom = 692.0
 focus_mode = 2
 text = "Problem Link"
 __meta__ = {
@@ -397,6 +398,21 @@ margin_top = 603.139
 margin_right = 371.489
 margin_bottom = 693.139
 dialog_text = "test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="TrainingPanel"]
+wait_time = 7200.0
+autostart = true
+script = ExtResource( 2 )
+
+[node name="TimeLeft" type="Label" parent="TrainingPanel/Timer"]
+margin_left = 579.084
+margin_top = 36.5268
+margin_right = 714.084
+margin_bottom = 59.5268
+text = "Time left: 02:00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
