@@ -56,7 +56,10 @@ func _on_GetTraining_pressed():
 	PlayerVariables.test = curr_test
 	PlayerVariables.difficulty = curr_difficulty
 	var are_you_sure = "You selected " + curr_test + " as your test and "
-	are_you_sure += curr_difficulty + " as your difficulty. Are you sure?"
+	are_you_sure += curr_difficulty + " as your difficulty.\n"
+	are_you_sure += "Once you press start, there will be a 2 HOUR TIMER that can't be stopped.\n"
+	are_you_sure += "Also, have a browser open so you can view the problems.\n"
+	are_you_sure += "Are you sure you want to start?"
 	get_node("ConfirmTraining").dialog_text = are_you_sure
 	get_node("ConfirmTraining").get_ok().text = "Yes"
 	get_node("ConfirmTraining").get_cancel().text = "No"
