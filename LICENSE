@@ -2,6 +2,7 @@ Everything in this project is licensed under GPL v3,
 except the following:
 
 - The Roboto font in the fonts/ folder is licensed under the Apache License, version 2
+Copyright notice for Roboto font: Copyright 2017 Google Inc.
 - scraper.py in the answers/scraper folder is licensed under the MIT License
 - Everything else (i.e. every file except scraper.py) in the answers/ folder is licensed under the CC0 License
 - Everything in the choices/ folder in licensed under the CC0 License
