@@ -1,7 +1,7 @@
 Everything in this project is licensed under GPL v3,
 except the following:
 
-- The font in the fonts/ folder is licensed under the Open Font License
+- The Roboto font in the fonts/ folder is licensed under the Apache License, version 2
 - scraper.py in the answers/scraper folder is licensed under the MIT License
 - Everything else (i.e. every file except scraper.py) in the answers/ folder is licensed under the CC0 License
 - Everything in the choices/ folder in licensed under the CC0 License
@@ -11,8 +11,8 @@ All licenses are available in the licenses/ folder
 A copy of the GPL License is available in the file called "GPL.LICENSE"
 in the licenses folder
 
-A copy of the OFL (Open font License) is available in the file called "OFL.LICENSE"
-in the licenses folder
+A copy of the Apache License, version 2 is available in the file called
+"APACHE2.LICENSE" in the licenses folder
 
 A copy of the MIT License is available in the file called "MIT.LICENSE"
 in the licenses folder.

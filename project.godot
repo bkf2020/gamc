@@ -26,7 +26,7 @@ default=false
 
 [gui]
 
-theme/custom_font="res://opensans.tres"
+theme/custom_font="res://roboto.tres"
 
 [physics]
 

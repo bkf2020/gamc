@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://GetTraining.gd" type="Script" id=1]
-[ext_resource path="res://opensans.tres" type="DynamicFont" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -68,7 +67,6 @@ margin_left = 107.527
 margin_top = 21.2911
 margin_right = 273.527
 margin_bottom = 96.2911
-custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Select your training:
 Pick a test first,
