@@ -9,7 +9,7 @@
 margin_left = 256.0
 margin_top = 27.0
 margin_right = 885.0
-margin_bottom = 866.0
+margin_bottom = 845.0
 rect_pivot_offset = Vector2( 264, 432 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -56,17 +56,20 @@ __meta__ = {
 
 [node name="Problem1Status" type="Label" parent="TrainingPanel"]
 margin_left = 215.0
-margin_top = 268.0
+margin_top = 274.0
 margin_right = 355.0
-margin_bottom = 291.0
+margin_bottom = 297.0
 rect_pivot_offset = Vector2( -696, 16 )
 text = "Unattempted (0/7)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Problem1Submit" type="Button" parent="TrainingPanel"]
 margin_left = 279.0
-margin_top = 300.0
+margin_top = 306.0
 margin_right = 359.0
-margin_bottom = 329.0
+margin_bottom = 335.0
 rect_pivot_offset = Vector2( -760, -16 )
 text = "Submit"
 __meta__ = {
@@ -75,20 +78,20 @@ __meta__ = {
 
 [node name="Problem1Answer" type="LineEdit" parent="TrainingPanel"]
 margin_left = 170.0
-margin_top = 300.0
+margin_top = 306.0
 margin_right = 271.0
-margin_bottom = 333.0
+margin_bottom = 339.0
 placeholder_text = "enter here"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Problem1Link" type="LinkButton" parent="TrainingPanel"]
-margin_left = 359.0
-margin_top = 244.0
-margin_right = 458.0
-margin_bottom = 267.0
-text = "Problem Link"
+[node name="Problem1Link" type="Button" parent="TrainingPanel"]
+margin_left = 368.059
+margin_top = 239.06
+margin_right = 521.059
+margin_bottom = 268.06
+text = "Copy Problem Link (AoPS)"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -155,13 +158,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Problem2Link" type="LinkButton" parent="TrainingPanel"]
-margin_left = 367.0
-margin_top = 364.0
-margin_right = 466.0
-margin_bottom = 387.0
-focus_mode = 2
-text = "Problem Link"
+[node name="Problem2Link" type="Button" parent="TrainingPanel"]
+margin_left = 381.832
+margin_top = 358.779
+margin_right = 534.832
+margin_bottom = 387.779
+text = "Copy Problem Link (AoPS)"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -183,9 +185,9 @@ margin_bottom = 332.0
 
 [node name="Problem3Text" type="Label" parent="TrainingPanel"]
 margin_left = 127.0
-margin_top = 476.0
+margin_top = 471.0
 margin_right = 205.0
-margin_bottom = 499.0
+margin_bottom = 494.0
 text = "Problem 3"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -193,9 +195,9 @@ __meta__ = {
 
 [node name="Problem3Description" type="Label" parent="TrainingPanel"]
 margin_left = 231.0
-margin_top = 476.0
+margin_top = 471.0
 margin_right = 341.0
-margin_bottom = 499.0
+margin_bottom = 494.0
 text = "2016 AMC 8 #1"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -203,9 +205,9 @@ __meta__ = {
 
 [node name="Problem3Status" type="Label" parent="TrainingPanel"]
 margin_left = 231.0
-margin_top = 500.0
+margin_top = 495.0
 margin_right = 371.0
-margin_bottom = 523.0
+margin_bottom = 518.0
 text = "Unattempted (0/7)"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -213,9 +215,9 @@ __meta__ = {
 
 [node name="Problem3Submit" type="Button" parent="TrainingPanel"]
 margin_left = 295.0
-margin_top = 524.0
+margin_top = 519.0
 margin_right = 375.0
-margin_bottom = 553.0
+margin_bottom = 548.0
 text = "Submit"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -223,21 +225,20 @@ __meta__ = {
 
 [node name="Problem3Answer" type="LineEdit" parent="TrainingPanel"]
 margin_left = 173.0
-margin_top = 524.0
+margin_top = 519.0
 margin_right = 271.0
-margin_bottom = 557.0
+margin_bottom = 552.0
 placeholder_text = "enter here"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Problem3Link" type="LinkButton" parent="TrainingPanel"]
-margin_left = 375.0
-margin_top = 476.0
-margin_right = 474.0
-margin_bottom = 499.0
-focus_mode = 2
-text = "Problem Link"
+[node name="Problem3Link" type="Button" parent="TrainingPanel"]
+margin_left = 388.904
+margin_top = 459.845
+margin_right = 541.904
+margin_bottom = 488.845
+text = "Copy Problem Link (AoPS)"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -256,9 +257,9 @@ margin_bottom = 451.245
 
 [node name="Problem4Text" type="Label" parent="TrainingPanel"]
 margin_left = 135.0
-margin_top = 580.0
+margin_top = 575.0
 margin_right = 213.0
-margin_bottom = 603.0
+margin_bottom = 598.0
 rect_pivot_offset = Vector2( 104, 48 )
 text = "Problem 4"
 __meta__ = {
@@ -267,9 +268,9 @@ __meta__ = {
 
 [node name="Problem4Description" type="Label" parent="TrainingPanel"]
 margin_left = 223.0
-margin_top = 580.0
+margin_top = 575.0
 margin_right = 333.0
-margin_bottom = 603.0
+margin_bottom = 598.0
 rect_pivot_offset = Vector2( 16, 48 )
 text = "2016 AMC 8 #1"
 __meta__ = {
@@ -278,17 +279,17 @@ __meta__ = {
 
 [node name="Problem4Status" type="Label" parent="TrainingPanel"]
 margin_left = 223.0
-margin_top = 604.0
+margin_top = 599.0
 margin_right = 363.0
-margin_bottom = 627.0
+margin_bottom = 622.0
 rect_pivot_offset = Vector2( 80, 24 )
 text = "Unattempted (0/7)"
 
 [node name="Problem4Submit" type="Button" parent="TrainingPanel"]
 margin_left = 285.878
-margin_top = 636.0
+margin_top = 631.0
 margin_right = 365.878
-margin_bottom = 665.0
+margin_bottom = 660.0
 rect_pivot_offset = Vector2( 16, -8 )
 text = "Submit"
 __meta__ = {
@@ -297,21 +298,20 @@ __meta__ = {
 
 [node name="Problem4Answer" type="LineEdit" parent="TrainingPanel"]
 margin_left = 175.0
-margin_top = 636.0
+margin_top = 631.0
 margin_right = 279.0
-margin_bottom = 669.0
+margin_bottom = 664.0
 placeholder_text = "enter here"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Problem4Link" type="LinkButton" parent="TrainingPanel"]
-margin_left = 359.0
-margin_top = 580.0
-margin_right = 458.0
-margin_bottom = 603.0
-focus_mode = 2
-text = "Problem Link"
+[node name="Problem4Link" type="Button" parent="TrainingPanel"]
+margin_left = 388.904
+margin_top = 569.845
+margin_right = 541.904
+margin_bottom = 598.845
+text = "Copy Problem Link (AoPS)"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -333,9 +333,9 @@ __meta__ = {
 
 [node name="Problem5Text" type="Label" parent="TrainingPanel"]
 margin_left = 135.0
-margin_top = 684.0
+margin_top = 679.0
 margin_right = 213.0
-margin_bottom = 707.0
+margin_bottom = 702.0
 rect_pivot_offset = Vector2( 104, 48 )
 text = "Problem 5"
 __meta__ = {
@@ -344,9 +344,9 @@ __meta__ = {
 
 [node name="Problem5Description" type="Label" parent="TrainingPanel"]
 margin_left = 223.0
-margin_top = 684.0
+margin_top = 679.0
 margin_right = 333.0
-margin_bottom = 707.0
+margin_bottom = 702.0
 rect_pivot_offset = Vector2( 16, 48 )
 text = "2016 AMC 8 #1"
 __meta__ = {
@@ -355,17 +355,17 @@ __meta__ = {
 
 [node name="Problem5Status" type="Label" parent="TrainingPanel"]
 margin_left = 223.0
-margin_top = 708.0
+margin_top = 703.0
 margin_right = 363.0
-margin_bottom = 731.0
+margin_bottom = 726.0
 rect_pivot_offset = Vector2( 80, 24 )
 text = "Unattempted (0/7)"
 
 [node name="Problem5Submit" type="Button" parent="TrainingPanel"]
 margin_left = 287.0
-margin_top = 740.0
+margin_top = 735.0
 margin_right = 367.0
-margin_bottom = 769.0
+margin_bottom = 764.0
 rect_pivot_offset = Vector2( 16, -8 )
 text = "Submit"
 __meta__ = {
@@ -374,21 +374,20 @@ __meta__ = {
 
 [node name="Problem5Answer" type="LineEdit" parent="TrainingPanel"]
 margin_left = 180.0
-margin_top = 740.0
+margin_top = 735.0
 margin_right = 281.0
-margin_bottom = 773.0
+margin_bottom = 768.0
 placeholder_text = "enter here"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Problem5Link" type="LinkButton" parent="TrainingPanel"]
-margin_left = 367.0
-margin_top = 684.0
-margin_right = 466.0
-margin_bottom = 707.0
-focus_mode = 2
-text = "Problem Link"
+[node name="Problem5Link" type="Button" parent="TrainingPanel"]
+margin_left = 388.904
+margin_top = 673.845
+margin_right = 541.904
+margin_bottom = 702.845
+text = "Copy Problem Link (AoPS)"
 __meta__ = {
 "_edit_use_anchors_": false
 }

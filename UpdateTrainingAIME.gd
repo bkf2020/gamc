@@ -21,15 +21,15 @@ func _ready():
 
 
 func _on_Problem1Link_pressed():
-	OS.shell_open(PlayerVariables.problem_links[0])
+	OS.set_clipboard(PlayerVariables.problem_links[0])
 func _on_Problem2Link_pressed():
-	OS.shell_open(PlayerVariables.problem_links[1])
+	OS.set_clipboard(PlayerVariables.problem_links[1])
 func _on_Problem3Link_pressed():
-	OS.shell_open(PlayerVariables.problem_links[2])
+	OS.set_clipboard(PlayerVariables.problem_links[2])
 func _on_Problem4Link_pressed():
-	OS.shell_open(PlayerVariables.problem_links[3])
+	OS.set_clipboard(PlayerVariables.problem_links[3])
 func _on_Problem5Link_pressed():
-	OS.shell_open(PlayerVariables.problem_links[4])
+	OS.set_clipboard(PlayerVariables.problem_links[4])
 
 func valid_format(var input):
 	return input.is_valid_integer() and 0 <= int(input) and int(input) <= 999
