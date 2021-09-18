@@ -88,5 +88,14 @@ obstacle, you will be pushed back. If you hit the rabbit, you will be pushed bac
 	- [x] check answer after user submits one
 	- [x] add countdown timer
 	- [x] make sure two problems aren't repeated (may happen)
-	- [ ] allow users to copy and past a link instead of clicking it
+	- [x] allow users to copy and past a link instead of clicking it
+	- [ ] have one function instead of multiple functions for similar tasks
 	- [ ] simplify the code! (maybe if there is time...)
+- [ ] add a screen that lets characters keep track of stats
+	- [ ] add button to finish training/end training when time is up
+	- [ ] get total stats after a training
+	- [ ] keep track of total stats available
+	- [ ] keep track of left over stats
+	- [ ] add buttons for each of the 5 stats
+	- [ ] keep track of the total stats used
+	- [ ] set each stat to zero in the beginning
