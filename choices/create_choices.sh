@@ -14,7 +14,7 @@ for TEST in aime amc8 amc10 amc12; do
 done
 
 # AIME
-for YEAR in $(seq 2015 2021); do
+for YEAR in $(seq 2009 2021); do
 	for TEST_TYPE in I II; do
 		for PROBLEM in $(seq 5); do
 			echo -n "${BASE}/${YEAR}_AIME_${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> aime/easy
@@ -46,7 +46,7 @@ for YEAR in $(seq 2015 2021); do
 	done
 done
 
-for YEAR in $(seq 2014 2020); do
+for YEAR in $(seq 2010 2020); do
 	for PROBLEM in $(seq 15); do
 		echo -n "${BASE}/${YEAR}_AMC_8_Problems#Problem_${PROBLEM}," >> amc8/easy
 		echo -n "answers/amc8/${YEAR}/answers.txt," >> amc8/easy
@@ -77,7 +77,7 @@ for YEAR in $(seq 2014 2020); do
 done
 
 # AMC 10
-for YEAR in $(seq 2015 2021); do
+for YEAR in $(seq 2013 2021); do
 	for TEST_TYPE in A B; do
 		for PROBLEM in $(seq 15); do
 			echo -n "${BASE}/${YEAR}_AMC_10${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc10/easy
@@ -110,7 +110,7 @@ for YEAR in $(seq 2015 2021); do
 done
 
 #AMC 12
-for YEAR in $(seq 2015 2021); do
+for YEAR in $(seq 2013 2021); do
 	for TEST_TYPE in A B; do
 		for PROBLEM in $(seq 15); do
 			echo -n "${BASE}/${YEAR}_AMC_12${TEST_TYPE}_Problems#Problem_${PROBLEM}," >> amc12/easy
