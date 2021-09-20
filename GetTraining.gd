@@ -1,21 +1,5 @@
 extends Panel
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
 func _on_TestSelection_item_selected(index):
 	var diff_description = ""
 	if(index == 0):
@@ -72,36 +56,36 @@ func _on_ConfirmTraining_confirmed():
 	var ldiff = PlayerVariables.difficulty.to_lower()
 	if(ldiff == "very hard"):
 		ldiff = "veryhard"
-	
+
 	var test_data = File.new()
 	test_data.open("res://choices/" + ltest + "/" + ldiff, File.READ)
-	
+
 	var problem_data = []
-	
+
 	while(!test_data.eof_reached()):
 		problem_data.push_back(test_data.get_line())
-	
+
 	var possible = problem_data.size() - 1 # extra line at end
 	var choices = []
-	
+
 	for i in 5:
 		var curr_choice_idx = rng.randi_range(0, possible - 1)
 		while(choices.find(curr_choice_idx) != -1):
 			curr_choice_idx = rng.randi_range(0, possible - 1)
 		choices.push_back(curr_choice_idx)
-		
+
 		var curr_choice = problem_data[curr_choice_idx]
 		var data_in_choice = curr_choice.split(",", true, 3)
 		var curr_problem_link = data_in_choice[0]
 		var curr_problem_answer = data_in_choice[1]
 		var curr_problem_name = data_in_choice[2]
 		var curr_problem_num = data_in_choice[3]
-		
+
 		PlayerVariables.problem_links[i] = curr_problem_link
 		PlayerVariables.problem_answers[i] = curr_problem_answer
 		PlayerVariables.problem_names[i] = curr_problem_name
 		PlayerVariables.problem_nums[i] = int(curr_problem_num)
-		
+
 	if(ltest == "aime"):
 		get_tree().change_scene("res://TrainingAIME.tscn")
 	else:
