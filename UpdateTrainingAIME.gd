@@ -49,5 +49,5 @@ func _on_answer_confirmed(index):
 		get_node("Problem" + istr + "Submit").hide()
 		get_node("Problem" + istr + "Answer").hide()
 	else:
-		get_node("Problem" + istr + "Status").text = "Wrong answer! (0/7)"
+		get_node("Problem" + istr + "Status").text = "Wrong answer!"
 		problem_points[index] = max(problem_points[index] - 2, 1)

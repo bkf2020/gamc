@@ -10,7 +10,7 @@ func _ready():
 
 func _on_ProblemLink_pressed(index):
 	OS.set_clipboard(PlayerVariables.problem_links[index])
-	
+
 var player_answer = ""
 
 func _on_ProblemSubmit_pressed(index):
@@ -31,7 +31,7 @@ func _on_answer_confirmed(index):
 	var status_node = get_node("Problem" + istr + "Status")
 	var answer_node = get_node("Problem" + istr + "Answer")
 	var submit_node = get_node("Problem" + istr + "Submit")
-	
+
 	var answers_file = File.new()
 	answers_file.open("res://" + PlayerVariables.problem_answers[index], File.READ)
 	var answers = ["A"]
@@ -43,5 +43,5 @@ func _on_answer_confirmed(index):
 		submit_node.hide()
 		answer_node.hide()
 	else:
-		status_node.text = "Wrong answer! (0/7)"
+		status_node.text = "Wrong answer!"
 		problem_points[index] = max(problem_points[index] - 2, 1)
