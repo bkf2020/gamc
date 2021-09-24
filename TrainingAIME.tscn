@@ -422,7 +422,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="TrainingPanel"]
+[node name="TotalPoints" type="Label" parent="TrainingPanel"]
 margin_left = 453.723
 margin_top = 57.1996
 margin_right = 555.723
