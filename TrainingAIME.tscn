@@ -6,10 +6,10 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="TrainingPanel" type="Panel" parent="."]
-margin_left = 256.0
-margin_top = 27.0
-margin_right = 885.0
-margin_bottom = 845.0
+margin_left = 258.0
+margin_top = 54.0
+margin_right = 901.0
+margin_bottom = 897.0
 rect_pivot_offset = Vector2( 264, 432 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -17,10 +17,10 @@ __meta__ = {
 }
 
 [node name="Training" type="Label" parent="TrainingPanel"]
-margin_left = 31.0
-margin_top = 61.0
-margin_right = 557.0
-margin_bottom = 214.0
+margin_left = 33.0
+margin_top = 83.0
+margin_right = 559.0
+margin_bottom = 236.0
 text = "Training
 Each problem is originally worth 7 points.
 If you get it wrong, the value of the problem
@@ -413,14 +413,21 @@ autostart = true
 script = ExtResource( 2 )
 
 [node name="TimeLeft" type="Label" parent="TrainingPanel/Timer"]
-margin_left = 657.0
-margin_top = 51.0
-margin_right = 805.0
-margin_bottom = 74.0
+margin_left = 710.708
+margin_top = 87.7089
+margin_right = 858.708
+margin_bottom = 110.709
 text = "Time left: 02:00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label" type="Label" parent="TrainingPanel"]
+margin_left = 453.723
+margin_top = 57.1996
+margin_right = 555.723
+margin_bottom = 76.1996
+text = "Total points: 0"
 
 [connection signal="pressed" from="TrainingPanel/Problem1Submit" to="TrainingPanel" method="_on_ProblemSubmit_pressed" binds= [ 0 ]]
 [connection signal="pressed" from="TrainingPanel/Problem1Link" to="TrainingPanel" method="_on_ProblemLink_pressed" binds= [ 0 ]]
