@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://UpdateTrainingAMC.gd" type="Script" id=1]
-[ext_resource path="res://TrainingTimer.gd" type="Script" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -401,20 +400,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Timer" type="Timer" parent="TrainingPanel"]
-wait_time = 7200.0
-autostart = true
-script = ExtResource( 2 )
-
-[node name="TimeLeft" type="Label" parent="TrainingPanel/Timer"]
-margin_left = 623.144
-margin_top = 102.902
-margin_right = 758.144
-margin_bottom = 125.902
+[node name="TimeLeft" type="Label" parent="TrainingPanel"]
+margin_left = 360.144
+margin_top = 45.902
+margin_right = 495.144
+margin_bottom = 68.902
 text = "Time left: 02:00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Timer" type="Timer" parent="TrainingPanel"]
+wait_time = 7200.0
+autostart = true
 
 [node name="TotalPoints" type="Label" parent="TrainingPanel"]
 margin_left = 377.745

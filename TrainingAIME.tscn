@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://UpdateTrainingAIME.gd" type="Script" id=1]
-[ext_resource path="res://TrainingTimer.gd" type="Script" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -407,20 +406,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Timer" type="Timer" parent="TrainingPanel"]
-wait_time = 7200.0
-autostart = true
-script = ExtResource( 2 )
-
-[node name="TimeLeft" type="Label" parent="TrainingPanel/Timer"]
-margin_left = 710.708
-margin_top = 87.7089
-margin_right = 858.708
-margin_bottom = 110.709
+[node name="TimeLeft" type="Label" parent="TrainingPanel"]
+margin_left = 452.708
+margin_top = 33.7089
+margin_right = 600.708
+margin_bottom = 56.7089
 text = "Time left: 02:00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Timer" type="Timer" parent="TrainingPanel"]
+wait_time = 7200.0
+autostart = true
 
 [node name="TotalPoints" type="Label" parent="TrainingPanel"]
 margin_left = 453.723
@@ -428,6 +426,9 @@ margin_top = 57.1996
 margin_right = 555.723
 margin_bottom = 76.1996
 text = "Total points: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="TrainingPanel/Problem1Submit" to="TrainingPanel" method="_on_ProblemSubmit_pressed" binds= [ 0 ]]
 [connection signal="pressed" from="TrainingPanel/Problem1Link" to="TrainingPanel" method="_on_ProblemLink_pressed" binds= [ 0 ]]
