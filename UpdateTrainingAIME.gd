@@ -35,6 +35,7 @@ func _on_ProblemSubmit_pressed(index):
 		invalid_node.show()
 
 var problem_points = [7, 7, 7, 7, 7]
+var player_points = 0
 
 func _on_answer_confirmed(index):
 	var istr = str(index + 1)
@@ -48,6 +49,8 @@ func _on_answer_confirmed(index):
 		get_node("Problem" + istr + "Status").text = "Correct! (" + str(problem_points[index]) + "/7)"
 		get_node("Problem" + istr + "Submit").hide()
 		get_node("Problem" + istr + "Answer").hide()
+		player_points += problem_points[index]
+		get_node("TotalPoints").text = "Total points: " + str(player_points)
 	else:
 		get_node("Problem" + istr + "Status").text = "Wrong answer!"
 		problem_points[index] = max(problem_points[index] - 2, 1)
