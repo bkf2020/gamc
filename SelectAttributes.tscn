@@ -1,0 +1,203 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 293.0
+margin_top = 24.0
+margin_right = 693.0
+margin_bottom = 639.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Panel"]
+margin_left = 123.819
+margin_top = 21.893
+margin_right = 275.819
+margin_bottom = 40.893
+text = "Select Your Attributes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Description" type="Label" parent="Panel"]
+margin_left = 54.7051
+margin_top = 50.8808
+margin_right = 339.705
+margin_bottom = 223.881
+text = "All attributes start at zero. To increase an attribute by one, you need to use one of your points. If you decrease an attribute by one, you will get the point back.
+Click the plus sign '+' to increase an attribute and the minus sign '-' to decrease an attribute.
+Left over points you don't use will be available in the future.
+Each attribute can be at most 7 points."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Strength" type="Label" parent="Panel"]
+margin_left = 90.6081
+margin_top = 343.329
+margin_right = 215.608
+margin_bottom = 362.329
+text = "Strength: 0 points"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IncreaseStrength" type="Button" parent="Panel"]
+margin_left = 276.447
+margin_top = 338.919
+margin_right = 297.447
+margin_bottom = 363.919
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DecreaseStrength" type="Button" parent="Panel"]
+margin_left = 234.869
+margin_top = 340.179
+margin_right = 255.869
+margin_bottom = 365.179
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Intelligence" type="Label" parent="Panel"]
+margin_left = 75.6081
+margin_top = 384.959
+margin_right = 220.608
+margin_bottom = 403.959
+text = "Intelligence: 0 points"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IncreaseIntelligence" type="Button" parent="Panel"]
+margin_left = 276.447
+margin_top = 381.919
+margin_right = 297.447
+margin_bottom = 406.919
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DecreaseIntelligence" type="Button" parent="Panel"]
+margin_left = 234.869
+margin_top = 383.179
+margin_right = 255.869
+margin_bottom = 408.179
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Healing" type="Label" parent="Panel"]
+margin_left = 100.0
+margin_top = 429.0
+margin_right = 223.0
+margin_bottom = 448.0
+text = "Healing: 0 points"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IncreaseHealing" type="Button" parent="Panel"]
+margin_left = 276.447
+margin_top = 425.919
+margin_right = 297.447
+margin_bottom = 450.919
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DecreaseHealing" type="Button" parent="Panel"]
+margin_left = 234.869
+margin_top = 427.179
+margin_right = 255.869
+margin_bottom = 452.179
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Speed" type="Label" parent="Panel"]
+margin_left = 111.0
+margin_top = 467.0
+margin_right = 223.0
+margin_bottom = 486.0
+text = "Speed: 0 points"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IncreaseSpeed" type="Button" parent="Panel"]
+margin_left = 276.447
+margin_top = 463.919
+margin_right = 297.447
+margin_bottom = 488.919
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DecreaseSpeed" type="Button" parent="Panel"]
+margin_left = 234.869
+margin_top = 465.179
+margin_right = 255.869
+margin_bottom = 490.179
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Luck" type="Label" parent="Panel"]
+margin_left = 121.0
+margin_top = 508.0
+margin_right = 224.0
+margin_bottom = 527.0
+text = "Luck: 0 points"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IncreaseLuck" type="Button" parent="Panel"]
+margin_left = 276.447
+margin_top = 504.919
+margin_right = 297.447
+margin_bottom = 529.919
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DecreaseLuck" type="Button" parent="Panel"]
+margin_left = 234.869
+margin_top = 506.179
+margin_right = 255.869
+margin_bottom = 531.179
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="Button" parent="Panel"]
+margin_left = 96.384
+margin_top = 565.705
+margin_right = 302.384
+margin_bottom = 590.705
+text = "Continue with this selection"
+
+[node name="TotalPoints" type="Label" parent="Panel"]
+margin_left = 125.992
+margin_top = 306.791
+margin_right = 254.992
+margin_bottom = 325.791
+text = "Total points left: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
