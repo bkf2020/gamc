@@ -5,10 +5,10 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="TrainingPanel" type="Panel" parent="."]
-margin_left = 263.0
-margin_top = 57.0
-margin_right = 817.0
-margin_bottom = 952.0
+margin_left = 241.0
+margin_top = 43.0
+margin_right = 795.0
+margin_bottom = 900.0
 rect_pivot_offset = Vector2( 264, 432 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -424,6 +424,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="FinishTraining" type="Button" parent="TrainingPanel"]
+margin_left = 38.0
+margin_top = 36.0
+margin_right = 320.0
+margin_bottom = 103.0
+text = "Finish Training"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConfirmFinishTraining" type="ConfirmationDialog" parent="TrainingPanel"]
+visible = true
+margin_left = 84.0
+margin_top = 430.0
+margin_right = 430.0
+margin_bottom = 500.0
+dialog_text = "Are you sure you want to end the training here?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="TrainingPanel/Problem1Submit" to="TrainingPanel" method="_on_ProblemSubmit_pressed" binds= [ 0 ]]
 [connection signal="pressed" from="TrainingPanel/Problem1Link" to="TrainingPanel" method="_on_ProblemLink_pressed" binds= [ 0 ]]
 [connection signal="confirmed" from="TrainingPanel/Problem1Confirm" to="TrainingPanel" method="_on_answer_confirmed" binds= [ 0 ]]
@@ -439,3 +460,5 @@ __meta__ = {
 [connection signal="pressed" from="TrainingPanel/Problem5Submit" to="TrainingPanel" method="_on_ProblemSubmit_pressed" binds= [ 4 ]]
 [connection signal="pressed" from="TrainingPanel/Problem5Link" to="TrainingPanel" method="_on_ProblemLink_pressed" binds= [ 4 ]]
 [connection signal="confirmed" from="TrainingPanel/Problem5Confirm" to="TrainingPanel" method="_on_answer_confirmed" binds= [ 4 ]]
+[connection signal="pressed" from="TrainingPanel/FinishTraining" to="TrainingPanel" method="_on_FinishTraining_pressed"]
+[connection signal="confirmed" from="TrainingPanel/ConfirmFinishTraining" to="TrainingPanel" method="_on_FinishTraining_confirmed"]

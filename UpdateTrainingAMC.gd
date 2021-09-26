@@ -70,3 +70,15 @@ func _on_answer_confirmed(index):
 	else:
 		status_node.text = "Wrong answer!"
 		problem_points[index] = max(problem_points[index] - 2, 1)
+
+func _on_FinishTraining_pressed():
+	var confirmation = get_node("ConfirmFinishTraining")
+	confirmation.dialog_text = "Are you sure you want to end the training here?"
+	confirmation.get_cancel().text = "No"
+	confirmation.get_ok().text = "Yes"
+	confirmation.show()
+
+func _on_FinishTraining_confirmed():
+	# this is the number of seconds used so far
+	PlayerVariables.seconds_left -= 7200 - int(floor(get_node("Timer").time_left))
+	get_tree().change_scene("res://YourHome.tscn")
