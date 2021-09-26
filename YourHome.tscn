@@ -94,7 +94,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HoursLeft" type="Label" parent="Panel"]
+[node name="TimeLeft" type="Label" parent="Panel"]
 margin_left = 281.524
 margin_top = 233.415
 margin_right = 449.524

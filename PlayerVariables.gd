@@ -6,3 +6,4 @@ var problem_names = ["", "", "", "", ""]
 var problem_answers = ["", "", "", "", ""]
 var problem_links = ["", "", "", "", ""]
 var problem_nums = [0, 0, 0, 0, 0]
+var seconds_left = 86400
