@@ -1,0 +1,100 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://roboto.tres" type="DynamicFont" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 267.405
+margin_top = 59.8593
+margin_right = 762.405
+margin_bottom = 523.859
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Welcome" type="Label" parent="Panel"]
+margin_left = 183.624
+margin_top = 26.8921
+margin_right = 298.624
+margin_bottom = 46.8921
+custom_fonts/font = ExtResource( 1 )
+text = "Welcome Home!"
+
+[node name="Training" type="Button" parent="Panel"]
+margin_left = 60.4079
+margin_top = 95.3313
+margin_right = 180.408
+margin_bottom = 125.331
+text = "Do a training"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Work" type="Button" parent="Panel"]
+margin_left = 62.581
+margin_top = 155.645
+margin_right = 177.581
+margin_bottom = 180.645
+text = "Go to work"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jobs" type="Button" parent="Panel"]
+margin_left = 62.7462
+margin_top = 216.512
+margin_right = 181.746
+margin_bottom = 241.512
+text = "Search for jobs"
+
+[node name="Test" type="Button" parent="Panel"]
+margin_left = 66.2378
+margin_top = 276.672
+margin_right = 181.238
+margin_bottom = 301.672
+text = "Take the skill test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Motivation" type="Button" parent="Panel"]
+margin_left = 65.0835
+margin_top = 329.386
+margin_right = 251.083
+margin_bottom = 356.386
+text = "Increase your motivation"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bed" type="Button" parent="Panel"]
+margin_left = 68.2582
+margin_top = 388.913
+margin_right = 148.258
+margin_bottom = 413.913
+text = "Go to bed"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Characteristics" type="Label" parent="Panel"]
+margin_left = 279.0
+margin_top = 86.0
+margin_right = 390.0
+margin_bottom = 171.0
+text = "Characteristics:
+Motivation: 100
+Energy: 100
+Math skill: N/A
+Job: Grocercy Store"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 285.088
+margin_top = 271.724
+margin_right = 453.088
+margin_bottom = 290.724
+text = "Hours left in the day: 24"
