@@ -75,7 +75,7 @@ margin_left = 68.2582
 margin_top = 388.913
 margin_right = 148.258
 margin_bottom = 413.913
-text = "Go to bed"
+text = "End the day by going to bed"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -94,18 +94,30 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Panel"]
-margin_left = 285.088
-margin_top = 271.724
-margin_right = 453.088
-margin_bottom = 290.724
-text = "Hours left in the day: 24"
+[node name="HoursLeft" type="Label" parent="Panel"]
+margin_left = 281.524
+margin_top = 233.415
+margin_right = 449.524
+margin_bottom = 274.415
+text = "Time left in the day:
+24:00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ConfirmationTraining" type="ConfirmationDialog" parent="Panel"]
 margin_left = 152.344
 margin_top = 200.452
 margin_right = 352.344
 margin_bottom = 270.452
+
+[node name="NoteOnTime" type="Label" parent="Panel"]
+margin_left = 285.088
+margin_top = 325.178
+margin_right = 471.088
+margin_bottom = 366.178
+text = "The timer will not move  until you do something."
+autowrap = true
 
 [connection signal="pressed" from="Panel/Training" to="Panel" method="_on_Training_pressed"]
 [connection signal="confirmed" from="Panel/ConfirmationTraining" to="Panel" method="_on_Training_confirmed"]
