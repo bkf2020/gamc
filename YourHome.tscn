@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://roboto.tres" type="DynamicFont" id=1]
+[ext_resource path="res://HomeScript.gd" type="Script" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,6 +10,7 @@ margin_left = 267.405
 margin_top = 59.8593
 margin_right = 762.405
 margin_bottom = 523.859
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -98,3 +100,12 @@ margin_top = 271.724
 margin_right = 453.088
 margin_bottom = 290.724
 text = "Hours left in the day: 24"
+
+[node name="ConfirmationTraining" type="ConfirmationDialog" parent="Panel"]
+margin_left = 152.344
+margin_top = 200.452
+margin_right = 352.344
+margin_bottom = 270.452
+
+[connection signal="pressed" from="Panel/Training" to="Panel" method="_on_Training_pressed"]
+[connection signal="confirmed" from="Panel/ConfirmationTraining" to="Panel" method="_on_Training_confirmed"]
