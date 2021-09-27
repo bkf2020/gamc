@@ -38,15 +38,11 @@ More details later..
 	- [x] make sure two problems aren't repeated (may happen)
 	- [x] allow users to copy and past a link instead of clicking it
 	- [x] have one function instead of multiple functions for similar tasks
-	- [ ] show total score player has
-	- [ ] have button that lets player end training (if they give up/are done)
-	- [ ] don't let players submit the same answer twice
+	- [ ] remove a player's score
+	- [x] have button that lets player end training (if they give up/are done)
 	- [ ] simplify the code! (maybe if there is time...)
-- [ ] add a screen that lets characters keep track of stats
-	- [ ] add button to finish training/end training when time is up
-	- [ ] get total stats after a training
-	- [ ] keep track of total stats available
-	- [ ] keep track of left over stats
-	- [ ] add buttons for each of the 5 stats
-	- [ ] keep track of the total stats used
-	- [ ] set each stat to zero in the beginning
+- [ ] update a player's stats (energy, motivation, etc.)
+- [ ] add money a player has as a stat
+- [ ] add hunger as a stat
+- [ ] charge money for training (internet + power fees)
+- [ ] allow players to eat a meal
