@@ -7,6 +7,7 @@ func _ready():
 	get_node("Problem3Description").text = PlayerVariables.problem_names[2]
 	get_node("Problem4Description").text = PlayerVariables.problem_names[3]
 	get_node("Problem5Description").text = PlayerVariables.problem_names[4]
+	get_node("Timer").wait_time = min(7200, PlayerVariables.seconds_left)
 
 func _physics_process(delta):
 	var tot_seconds = int(floor(get_node("Timer").time_left))

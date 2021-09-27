@@ -435,7 +435,6 @@ __meta__ = {
 }
 
 [node name="ConfirmFinishTraining" type="ConfirmationDialog" parent="TrainingPanel"]
-visible = true
 margin_left = 84.0
 margin_top = 430.0
 margin_right = 430.0

@@ -33,6 +33,26 @@ func _on_TestSelection_item_selected(index):
 
 
 func _on_GetTraining_pressed():
+	var seconds_left = int(min(PlayerVariables.seconds_left, 7200))
+	var seconds = seconds_left % 60
+	seconds_left = seconds_left / 60 # get number of minutes
+	var minutes = seconds_left % 60
+	seconds_left = seconds_left / 60 # get number of hours
+	var hours = seconds_left
+	
+	var seconds_str = str(seconds)
+	var minutes_str = str(minutes)
+	var hours_str = str(hours)
+	
+	if(seconds < 10):
+		seconds_str = "0" + seconds_str
+	if(minutes < 10):
+		minutes_str = "0" + minutes_str
+	if(hours < 10):
+		hours_str = "0" + hours_str
+	var time_left = hours_str + ":" + minutes_str + ":" + seconds_str
+	time_left += " format (hours:minutes:seconds)"
+	
 	var test_id = get_node("TestSelection").get_selected_id()
 	var diff_id = get_node("DifficultySelection").get_selected_id()
 	var curr_test = get_node("TestSelection").get_item_text(test_id)
@@ -41,7 +61,7 @@ func _on_GetTraining_pressed():
 	PlayerVariables.difficulty = curr_difficulty
 	var are_you_sure = "You selected " + curr_test + " as your test and "
 	are_you_sure += curr_difficulty + " as your difficulty.\n"
-	are_you_sure += "Once you press start, there will be a 2 HOUR TIMER that can't be stopped.\n"
+	are_you_sure += "Once you press start, you will have at most " + time_left + " to finish the training.\n"
 	are_you_sure += "Also, have a browser open so you can view the problems.\n"
 	are_you_sure += "Are you sure you want to start?"
 	get_node("ConfirmTraining").dialog_text = are_you_sure
