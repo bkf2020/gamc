@@ -51,7 +51,7 @@ func _on_GetTraining_pressed():
 	if(hours < 10):
 		hours_str = "0" + hours_str
 	var time_left = hours_str + ":" + minutes_str + ":" + seconds_str
-	time_left += " format (hours:minutes:seconds)"
+	time_left += " (format: hours:minutes:seconds)"
 	
 	var test_id = get_node("TestSelection").get_selected_id()
 	var diff_id = get_node("DifficultySelection").get_selected_id()
