@@ -1,0 +1,291 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 333.0
+margin_top = 6.0
+margin_right = 723.0
+margin_bottom = 625.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Info" type="Label" parent="Panel"]
+margin_left = 40.433
+margin_top = 14.2705
+margin_right = 347.433
+margin_bottom = 55.2705
+text = "Skill Test
+You have 2 hours to finish the 16 problems."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8EasyName" type="Label" parent="Panel"]
+margin_left = 26.4453
+margin_top = 77.5063
+margin_right = 111.445
+margin_bottom = 96.5063
+text = "Problem name here"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8EasyScore" type="Label" parent="Panel"]
+margin_left = 25.4846
+margin_top = 100.051
+margin_right = 109.485
+margin_bottom = 119.051
+text = "Weight: 100"
+
+[node name="AMC8EasyChoices" type="OptionButton" parent="Panel"]
+margin_left = 206.81
+margin_top = 115.4
+margin_right = 245.81
+margin_bottom = 140.4
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8EasyStatus" type="Label" parent="Panel"]
+margin_left = 26.4285
+margin_top = 122.704
+margin_right = 189.428
+margin_bottom = 141.704
+text = "Unattempted"
+
+[node name="AMC8EasyAnswerLabel" type="Label" parent="Panel"]
+margin_left = 220.368
+margin_top = 78.4003
+margin_right = 312.368
+margin_bottom = 97.4003
+text = "Your answer:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8EasySubmit" type="Button" parent="Panel"]
+margin_left = 270.163
+margin_top = 115.481
+margin_right = 333.163
+margin_bottom = 140.481
+text = "Submit"
+
+[node name="AMC8EasyConfirm" type="ConfirmationDialog" parent="Panel"]
+margin_right = 200.0
+margin_bottom = 70.0
+
+[node name="AMC8EasyCopy" type="Button" parent="Panel"]
+margin_left = 25.3984
+margin_top = 146.279
+margin_right = 218.398
+margin_bottom = 171.279
+text = "Copy problem link (AoPS)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8MediumName" type="Label" parent="Panel"]
+margin_left = 26.4453
+margin_top = 215.506
+margin_right = 163.445
+margin_bottom = 234.506
+text = "Problem name here"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8MediumScore" type="Label" parent="Panel"]
+margin_left = 25.4846
+margin_top = 238.051
+margin_right = 109.485
+margin_bottom = 257.051
+text = "Weight: 150"
+
+[node name="AMC8MediumChoices" type="OptionButton" parent="Panel"]
+margin_left = 206.81
+margin_top = 253.4
+margin_right = 245.81
+margin_bottom = 278.4
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8MediumStatus" type="Label" parent="Panel"]
+margin_left = 26.4285
+margin_top = 260.704
+margin_right = 189.428
+margin_bottom = 279.704
+text = "Unattempted"
+
+[node name="AMC8MediumAnswerLabel" type="Label" parent="Panel"]
+margin_left = 220.368
+margin_top = 216.4
+margin_right = 312.368
+margin_bottom = 235.4
+text = "Your answer:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8MediumSubmit" type="Button" parent="Panel"]
+margin_left = 270.163
+margin_top = 253.481
+margin_right = 333.163
+margin_bottom = 278.481
+text = "Submit"
+
+[node name="AMC8MediumConfirm" type="ConfirmationDialog" parent="Panel"]
+margin_right = 200.0
+margin_bottom = 70.0
+
+[node name="AMC8MediumCopy" type="Button" parent="Panel"]
+margin_left = 25.3984
+margin_top = 282.279
+margin_right = 218.398
+margin_bottom = 307.279
+text = "Copy problem link (AoPS)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8HardName" type="Label" parent="Panel"]
+margin_left = 26.4453
+margin_top = 352.506
+margin_right = 163.445
+margin_bottom = 371.506
+text = "Problem name here"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8HardScore" type="Label" parent="Panel"]
+margin_left = 25.4846
+margin_top = 375.051
+margin_right = 109.485
+margin_bottom = 394.051
+text = "Weight: 200"
+
+[node name="AMC8HardChoices" type="OptionButton" parent="Panel"]
+margin_left = 206.81
+margin_top = 390.4
+margin_right = 245.81
+margin_bottom = 415.4
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8HardStatus" type="Label" parent="Panel"]
+margin_left = 26.4285
+margin_top = 397.704
+margin_right = 189.428
+margin_bottom = 416.704
+text = "Unattempted"
+
+[node name="AMC8HardAnswerLabel" type="Label" parent="Panel"]
+margin_left = 220.368
+margin_top = 353.4
+margin_right = 312.368
+margin_bottom = 372.4
+text = "Your answer:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8HardSubmit" type="Button" parent="Panel"]
+margin_left = 270.163
+margin_top = 390.481
+margin_right = 333.163
+margin_bottom = 415.481
+text = "Submit"
+
+[node name="AMC8HardConfirm" type="ConfirmationDialog" parent="Panel"]
+margin_right = 200.0
+margin_bottom = 70.0
+
+[node name="AMC8HardCopy" type="Button" parent="Panel"]
+margin_left = 25.3984
+margin_top = 421.279
+margin_right = 218.398
+margin_bottom = 446.279
+text = "Copy problem link (AoPS)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8VeryHardName" type="Label" parent="Panel"]
+margin_left = 26.4453
+margin_top = 486.506
+margin_right = 163.445
+margin_bottom = 505.506
+text = "Problem name here"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8VeryHardScore" type="Label" parent="Panel"]
+margin_left = 25.4846
+margin_top = 509.051
+margin_right = 109.485
+margin_bottom = 528.051
+text = "Weight: 220"
+
+[node name="AMC8VeryHardChoices" type="OptionButton" parent="Panel"]
+margin_left = 206.81
+margin_top = 524.4
+margin_right = 245.81
+margin_bottom = 549.4
+text = "A"
+items = [ "A", null, false, 0, null, "B", null, false, 1, null, "C", null, false, 2, null, "D", null, false, 3, null, "E", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8VeyHardStatus" type="Label" parent="Panel"]
+margin_left = 26.4285
+margin_top = 531.704
+margin_right = 189.428
+margin_bottom = 550.704
+text = "Unattempted"
+
+[node name="AMC8VeryHardAnswerLabel" type="Label" parent="Panel"]
+margin_left = 220.368
+margin_top = 487.4
+margin_right = 312.368
+margin_bottom = 506.4
+text = "Your answer:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AMC8VeryHardSubmit" type="Button" parent="Panel"]
+margin_left = 270.163
+margin_top = 524.481
+margin_right = 333.163
+margin_bottom = 549.481
+text = "Submit"
+
+[node name="AMC8VeryHardConfirm" type="ConfirmationDialog" parent="Panel"]
+margin_right = 200.0
+margin_bottom = 70.0
+
+[node name="AMC8VeryHardCopy" type="Button" parent="Panel"]
+margin_left = 25.3984
+margin_top = 559.279
+margin_right = 218.398
+margin_bottom = 584.279
+text = "Copy problem link (AoPS)"
+__meta__ = {
+"_edit_use_anchors_": false
+}

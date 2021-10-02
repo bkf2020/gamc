@@ -82,3 +82,4 @@ You will have 2 hours to solve as many as you can.
 		- [ ] number of days you have to work each week
 - [ ] allow players to eat a meal
 	- [x] add button for players to eat a meal
+- [ ] center panel on screen, add scroll bars
