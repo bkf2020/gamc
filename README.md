@@ -25,6 +25,30 @@ you know you want to do math and have a better life.
 
 More details later..
 
+# Details on test
+
+There are 16 problems from all difficulties (AMC 8 Easy, AMC 8 Hard, etc.):
+
+Here is the weight of each problem
+AMC 8 Easy: 100
+AMC 8 Medium: 150
+AMC 8 Hard: 200
+AMC 8 Very Hard: 220
+AMC 10 Easy: 150
+AMC 10 Medium: 200
+AMC 10 Hard: 250
+AMC 10 Very Hard: 350
+AMC 12 Easy: 200
+AMC 12 Medium: 300
+AMC 12 Hard: 350
+AMC 12 Very Hard: 500
+AIME Easy: 300
+AIME Medium: 400
+AIME Hard: 500
+AIME Very: Hard 650
+
+You will have 2 hours to solve as many as you can.
+
 # project goals
 - [ ] finish building an interface to allow players to train
 	- [x] add initial interface
