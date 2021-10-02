@@ -44,6 +44,17 @@ More details later..
 - [x] update a player's stats (energy, motivation, etc.)
 - [x] add money a player has as a stat
 - [x] add hunger as a stat
+- [ ] game over if any state is zero (or less)
 - [ ] charge money for training (internet + power fees)
+- [ ] have week numbers and day numbers
+- [ ] **think of creating a way for players to save progress**
+- [ ] allow players to go to work
+	- [ ] charge money + time for commute (20 minutes for grocery store)
+	- [ ] create a classes that defines a jobs?? (way to create description for different jobs EASILY)
+		- [ ] traits: time needed for commute
+		- [ ] energy level needed
+		- [ ] wage
+		- [ ] time spent each day working
+		- [ ] number of days you have to work each week
 - [ ] allow players to eat a meal
 	- [x] add button for players to eat a meal
