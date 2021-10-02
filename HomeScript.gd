@@ -20,6 +20,18 @@ func _ready():
 		hours_str = "0" + hours_str
 	time_left += hours_str + ":" + minutes_str + ":" + seconds_str
 	get_node("TimeLeft").text = time_left
+	
+	var characteristics = "Characteristics\n"
+	characteristics += "Motivation: " + str(PlayerVariables.motivation) + '\n'
+	characteristics += "Energy: " + str(PlayerVariables.energy) + '\n'
+	characteristics += "Hunger: " + str(PlayerVariables.hunger) + '\n'
+	if(PlayerVariables.has_math_skill):
+		characteristics += "Hunger: " + str(PlayerVariables.math_skill) + '\n'
+	else:
+		characteristics += "Math skill: N/A\n"
+	characteristics += "Money left: $" + str(PlayerVariables.money) + '\n'
+	characteristics += "Job: " + PlayerVariables.job + '\n'
+	get_node("Characteristics").text = characteristics
 
 func _on_Training_pressed():
 	var seconds_left = int(min(PlayerVariables.seconds_left, 7200))

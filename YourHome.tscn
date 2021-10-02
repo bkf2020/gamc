@@ -6,10 +6,10 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Panel" type="Panel" parent="."]
-margin_left = 267.405
-margin_top = 59.8593
-margin_right = 762.405
-margin_bottom = 523.859
+margin_left = 267.0
+margin_top = 60.0
+margin_right = 762.0
+margin_bottom = 552.0
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -22,6 +22,9 @@ margin_right = 298.624
 margin_bottom = 46.8921
 custom_fonts/font = ExtResource( 1 )
 text = "Welcome Home!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Training" type="Button" parent="Panel"]
 margin_left = 60.4079
@@ -71,36 +74,48 @@ __meta__ = {
 }
 
 [node name="Bed" type="Button" parent="Panel"]
-margin_left = 68.2582
-margin_top = 388.913
-margin_right = 148.258
-margin_bottom = 413.913
+margin_left = 69.4474
+margin_top = 431.724
+margin_right = 277.447
+margin_bottom = 456.724
 text = "End the day by going to bed"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Characteristics" type="Label" parent="Panel"]
-margin_left = 279.0
-margin_top = 86.0
-margin_right = 390.0
-margin_bottom = 171.0
+margin_left = 282.568
+margin_top = 74.2159
+margin_right = 420.568
+margin_bottom = 225.216
 text = "Characteristics:
 Motivation: 100
 Energy: 100
+Hunger: 0
 Math skill: N/A
-Job: Grocercy Store"
+Money left: $1500
+Job: Grocery Store"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TimeLeft" type="Label" parent="Panel"]
-margin_left = 281.524
-margin_top = 233.415
-margin_right = 449.524
-margin_bottom = 274.415
+margin_left = 281.929
+margin_top = 253.415
+margin_right = 449.929
+margin_bottom = 294.415
 text = "Time left in the day:
 24:00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Eat" type="Button" parent="Panel"]
+margin_left = 70.7578
+margin_top = 384.114
+margin_right = 157.758
+margin_bottom = 409.114
+text = "Eat a meal"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -113,11 +128,14 @@ margin_bottom = 270.452
 
 [node name="NoteOnTime" type="Label" parent="Panel"]
 margin_left = 285.088
-margin_top = 325.178
+margin_top = 338.178
 margin_right = 471.088
-margin_bottom = 366.178
+margin_bottom = 379.178
 text = "The timer will not move  until you do something."
 autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="Panel/Training" to="Panel" method="_on_Training_pressed"]
 [connection signal="confirmed" from="Panel/ConfirmationTraining" to="Panel" method="_on_Training_confirmed"]

@@ -41,8 +41,9 @@ More details later..
 	- [ ] remove a player's score
 	- [x] have button that lets player end training (if they give up/are done)
 	- [ ] simplify the code! (maybe if there is time...)
-- [ ] update a player's stats (energy, motivation, etc.)
-- [ ] add money a player has as a stat
-- [ ] add hunger as a stat
+- [x] update a player's stats (energy, motivation, etc.)
+- [x] add money a player has as a stat
+- [x] add hunger as a stat
 - [ ] charge money for training (internet + power fees)
 - [ ] allow players to eat a meal
+	- [x] add button for players to eat a meal
