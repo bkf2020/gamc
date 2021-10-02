@@ -83,3 +83,4 @@ You will have 2 hours to solve as many as you can.
 - [ ] allow players to eat a meal
 	- [x] add button for players to eat a meal
 - [ ] center panel on screen, add scroll bars
+	- [ ] NOTE: Need to create a custom container that is always the whole size of the panel (simple script probably); unless there is another way...
